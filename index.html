@@ -92,7 +92,11 @@
 
     <!-- 你给的 Desmos embed snapshot -->
  
- <iframe src="https://www.desmos.com/calculator/ebmh9jtro6?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+ <script src="https://www.desmos.com/api/v1.11/calculator.js?apiKey=cc9b5d3cc1c2436aa4d9d33cf55073ca"></script>
+    <div id="calculator" style="width: 600px; height: 400px;"></div>
+    <script>
+  var elt = document.getElementById('calculator');
+  var calculator = Desmos.GraphingCalculator(elt);
 </script>
   </div>
 
