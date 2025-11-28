@@ -95,10 +95,11 @@
 <script src="https://www.desmos.com/api/v1.11/calculator.js?apiKey=cc9b5d3cc1c2436aa4d9d33cf55073ca"></script>
 <div id="calculator" style="width: 600px; height: 400px;"></div>
 <script>
-    var elt = document.getElementById('calculator');
-    var calculator = Desmos.GraphingCalculator(elt);
+  var elt = document.getElementById('calculator');
+  var calculator = Desmos.GraphingCalculator(elt);
+  calculator.setExpression({ id: 'graph1', latex: 'y=x^2' });
 </script>
-</script>
+
   </div>
 
 </div>
