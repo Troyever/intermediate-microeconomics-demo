@@ -235,3 +235,23 @@ nav {
       .container { padding-inline: 14px; }
       h1 { font-size: 1.5rem; }
     }
+/* 只控制 dropdown-content 的展示，不碰布局 */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    z-index: 999;
+}
+
+/* 当 hover wrapper 时显示 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+body {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
