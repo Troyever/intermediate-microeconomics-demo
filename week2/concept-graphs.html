@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week 2 – Concept graphs</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", Roboto, sans-serif;
+      background: #f7f7f7;
+      color: #111827;
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 18px 60px;
+    }
+
+    .back-link {
+      margin-bottom: 14px;
+      font-size: 0.9rem;
+      display: inline-block;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin: 0 0 6px;
+    }
+
+    .subtitle {
+      margin: 0 0 22px;
+      color: #4b5563;
+      max-width: 720px;
+      font-size: 0.95rem;
+    }
+
+    .intro-box {
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 18px 18px 20px;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+      margin-bottom: 26px;
+      font-size: 0.95rem;
+    }
+
+    .intro-box h2 {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
+
+    .grid-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 0 0 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .graph-card {
+      background: #ffffff;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+      display: flex;
+      flex-direction: column;
+      min-height: 190px;
+    }
+
+    .graph-thumb {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      background: #e5e7eb;
+      display: block;
+    }
+
+    .graph-content {
+      padding: 12px 14px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      flex: 1;
+    }
+
+    .graph-title {
+      font-size: 0.98rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .graph-meta {
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+
+    .graph-desc {
+      font-size: 0.88rem;
+      margin: 0;
+      color: #4b5563;
+      flex: 1;
+    }
+
+    .graph-actions {
+      margin-top: 6px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.15s ease, transform 0.05s ease,
+        box-shadow 0.1s ease;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: #111827;
+      color: #f9fafb;
+    }
+
+    .btn-primary:hover {
+      background: #020617;
+      box-shadow: 0 3px 8px rgba(15, 23, 42, 0.35);
+    }
+
+    .btn:active {
+      transform: translateY(1px);
+      box-shadow: none;
+    }
+
+    @media (max-width: 600px) {
+      .container { padding-inline: 14px; }
+      h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <a class="back-link" href="../index.html">← Back to homepage</a>
+
+    <h1>Week 2 – Concept graphs</h1>
+    <p class="subtitle">
+      Conceptual Desmos graphs for Week 2: discrete bids and asks, and step-shaped
+      demand and supply curves.
+    </p>
+
+    <!-- General intro for Week 2 concepts -->
+    <section class="intro-box">
+      <h2>General intro</h2>
+      <p>
+        These graphs are intended for in-class explanation and short demos.
+        They build a bridge from raw order-book data (lists of bids and asks)
+        to the step functions usually drawn as “supply” and “demand” curves.
+      </p>
+      <p>
+        Use sliders and toggles to change the number of observations, turn the
+        randomizer on or off, and illustrate how the curves change as the
+        market thickens.
+      </p>
+    </section>
+
+    <h2 class="grid-title">Graphs</h2>
+
+    <section class="grid">
+
+      <!-- ✅ Graph block 1：你已经有的 Discrete-Demand-Supply 图 -->
+      <article class="graph-card">
+        <!-- 没有单独 thumbnail 就先用 week2.png；之后可以换成更具体的图 -->
+        <img
+          class="graph-thumb"
+          src="../assets/week2.png"
+          alt="Discrete Supply & Demand thumbnail"
+        />
+
+        <div class="graph-content">
+          <div>
+            <h3 class="graph-title">
+              Discrete Supply & Demand from Order Books
+            </h3>
+            <div class="graph-meta">
+              Concept · Desmos · interactive
+            </div>
+          </div>
+
+          <p class="graph-desc">
+            Maps ranked bids and asks into step-shaped demand and supply
+            curves; lets students see how changing the sample size or
+            randomization affects the curves.
+          </p>
+
+          <div class="graph-actions">
+            <a
+              class="btn btn-primary"
+              href="Discrete-Demand-Supply.html"
+              target="_blank"
+            >
+              Open graph
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 🧱 building block：复制下面这个结构就能新增一个 concept graph -->
+      <!--
+      <article class="graph-card">
+        <img
+          class="graph-thumb"
+          src="../assets/week2-other-concept.png"
+          alt="Another Week 2 concept graph"
+        />
+
+        <div class="graph-content">
+          <div>
+            <h3 class="graph-title">Your graph title here</h3>
+            <div class="graph-meta">
+              Concept · Desmos
+            </div>
+          </div>
+
+          <p class="graph-desc">
+            One-sentence description of what this graph is for and what
+            students should notice.
+          </p>
+
+          <div class="graph-actions">
+            <a class="btn btn-primary" href="YOUR-FILE.html" target="_blank">
+              Open graph
+            </a>
+          </div>
+        </div>
+      </article>
+      -->
+
+    </section>
+  </div>
+</body>
+</html>
