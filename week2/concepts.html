@@ -26,6 +26,31 @@
         <!-- 以后继续添加 -->
       </div>
     </div>
+.nav-item {
+    position: relative; 
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+/* dropdown 本身 */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;   /* 紧贴着 menu item 下方 */
+    left: 0;
+    background: white;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    z-index: 999;
+}
+
+/* 增加 hover 缓冲区 */
+.dropdown:hover {
+    display: block;
+}
 
     <div class="dropdown">
       <span class="dropdown-btn">Exercises ▾</span>
@@ -38,6 +63,10 @@
     </div>
   </div>
 </nav>
+ nav {
+    margin-bottom: 20px;
+}
+
 <!-- =================================================== -->
 
     <h1>Week 2 – Concept graphs</h1>
