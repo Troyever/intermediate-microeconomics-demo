@@ -1,4 +1,4 @@
- * { box-sizing: border-box; }
+
   .navbar {
     width: 100%;
     background: #ffffff;
@@ -67,6 +67,10 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+
+    * { box-sizing: border-box; }
+
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
@@ -211,5 +215,3 @@
       .container { padding-inline: 14px; }
       h1 { font-size: 1.5rem; }
     }
-
-</html>
