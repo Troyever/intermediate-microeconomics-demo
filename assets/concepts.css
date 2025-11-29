@@ -32,6 +32,11 @@
   .dropdown {
     position: relative;
   }
+nav {
+    margin-bottom: 20px;
+}
+
+
 
   .dropdown-btn {
     font-size: 0.95rem;
