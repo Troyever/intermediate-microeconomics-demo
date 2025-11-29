@@ -5,6 +5,10 @@
   <title>Mini EconGraphs Demo</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "Segoe UI", Roboto, sans-serif;
       margin: 0;
@@ -15,52 +19,117 @@
     }
 
     .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 20px;
+      max-width: 1000px;          /* 页面最大宽度，自适应缩小 */
+      margin: 0 auto;
+      padding: 24px 16px 40px;
     }
 
     h1 {
       text-align: center;
-      margin-bottom: 40px;
+      margin: 0 0 32px;
+      font-size: 1.8rem;
+    }
+
+    h2 {
+      margin: 0 0 16px;
+      font-size: 1.3rem;
     }
 
     .section {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 30px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      background: #fff;
+      padding: 20px 20px 24px;
+      border-radius: 12px;
+      margin-bottom: 28px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
     }
 
-    .flex {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .video, .text, .graph {
-      flex: 1;
-      min-width: 320px;
-    }
-
-    iframe {
+    /* Desmos 图：用比例盒子自适应宽度 */
+    .graph-wrapper {
+      position: relative;
       width: 100%;
-      border: 1px solid #ccc;
-      border-radius: 8px;
+      aspect-ratio: 16 / 9;       /* 比例可以改，比如想更高一点改成 4 / 3 */
     }
 
+    #discrete-sd {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* 视频同样用比例盒子 */
+    .video-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .video-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 16px 10px 32px;
+      }
+
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+      }
+
+      .section {
+        padding: 16px 14px 20px;
+        border-radius: 10px;
+      }
+    }
   </style>
 </head>
 
 <body>
+  <div class="container">
+    <!-- 整个页面标题 -->
+    <h1>Discrete Supply/Demand</h1>
 
-<div class="container">
-<!--Change title here-->
-  <h1>Discrete Supply/Demand</h1>
+    <!-- 1. Desmos 图 section -->
+    <section class="section">
+      <h2>📈 Interactive Graph</h2>
+      <div class="graph-wrapper">
+        <div id="discrete-sd"></div>
+      </div>
+    </section>
 
-    <!-- 用来放 Desmos 的容器 -->
-    <div id="discrete-sd" style="width: 100%; height: 500px;"></div>
+    <!-- 2. 视频 section -->
+    <section class="section">
+      <h2>🎥 Video</h2>
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- 3. 文本说明 section -->
+    <section class="section">
+      <h2>📘 Discrete Supply/Demand</h2>
+      <p>
+        explainaions here：
+        <br><br>
+        · 1. …<br>
+        · 2. …<br>
+        · 3. …
+      </p>
+    </section>
   </div>
 
   <!-- 引入 Desmos API -->
@@ -74,8 +143,9 @@
       settingsMenu: false
     });
 
-    // ====== 从这里开始不要动，等会儿只改 desmosState 这一块 ======
-const desmosState = JSON.parse(String.raw`
+    // 把你刚才发给我的那整坨 JSON 粘到下面这个 String.raw 里面
+    // 注意：保持 { ... } 整体结构，不要多写/少写括号
+    const desmosState = JSON.parse(String.raw`
 {
   "version": 11,
   "randomSeed": "18f6a9c9843e5ab87ac8302aa165b450",
@@ -638,40 +708,11 @@ const desmosState = JSON.parse(String.raw`
   "includeFunctionParametersInRandomSeed": true,
   "doNotMigrateMovablePointStyle": true
 }
-`);
+    `);
 
-calculator.setState(desmosState);
-
-    // ============================================================
+    calculator.setState(desmosState);
   </script>
 </body>
-
-
-
-
-  <!-- Upload video -->
-  <div class="section video">
-    <h2>🎥 Video</h2>
-    <!-- Links for the video -->
-    <iframe 
-      src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-      height="315"
-      allowfullscreen>
-    </iframe>
-  </div>
-
-  <!-- text box -->
-  <div class="section text">
-    <h2>📘 Discrete Supply/Demand</h2>
-    <p>
-      explainaions here：
-      <br><br>
-      · 1.
-      · 2.
-      ...
-      <br><br>
-      
-    </p>
-  </div>
+</html>
 
 
