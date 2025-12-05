@@ -39,6 +39,12 @@
     </div>
   </div>
 </nav>
+  <div class="nav-right">
+    <button id="export-desmos-btn" class="export-btn">
+      Export graph
+    </button>
+  </div>
+</nav>
 <!-- =================================================== -->
 
   <div class="container">
@@ -731,6 +737,27 @@
   "doNotMigrateMovablePointStyle": true
 }
     `);
+    // 一键导出当前 Desmos 视图
+document.getElementById('export-desmos-btn').addEventListener('click', function () {
+  // 可调：导出尺寸和清晰度
+  const opts = {
+    format: 'png',        // 'png' 或 'svg'
+    width: 1200,          // 导出图像宽度（像素）
+    height: 800,          // 导出图像高度（像素）
+    targetPixelRatio: 2   // 清晰度（2 相当于 Retina）
+  };
+
+  // 调用 Desmos 异步截图 API
+  calculator.asyncScreenshot(opts, function (dataUrl) {
+    const a = document.createElement('a');
+    a.href = dataUrl;
+    a.download = 'discrete-sd.png';   // 下载时的文件名
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  });
+});
+
 
     calculator.setState(desmosState);
   </script>
