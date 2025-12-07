@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Intermediate Microeconomics – Interactive Graphs</title>
+
+ <link rel="stylesheet" href="assets/site.css">
+<style>
+/* === 下拉菜单：最终干净版（可直接放 HTML） === */
+
+/* 外壳：Concepts / Exercises */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 0 8px;
+}
+
+/* 按钮本身 */
+.dropdown-btn {
+    cursor: pointer;
+    padding: 12px 4px;
+    display: inline-block;
+}
+
+/* 下拉内容 */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    padding: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    min-width: 150px;
+    z-index: 999;
+}
+
+/* hover 时显示 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 防止下拉菜单“闪掉”的透明桥梁 */
+.dropdown::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 10px; /* 关键 */
+}
+</style>
+
+</head>
+
+<body>
+  <!-- 顶部导航栏 -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <div class="nav-title">
+        Intermediate Micro – Interactive Graphs
+      </div>
+      <div class="nav-menu">
+        <!-- Exercises 下拉 -->
+        <div class="dropdown">
+          <div class="dropdown-toggle">
+            <span>Exercises</span>
+            <span class="caret"></span>
+          </div>
+          <div class="dropdown-menu">
+            <div class="dropdown-header">Weeks</div>
+            <!-- 占位链接：以后建 weekX/exercises.html 即可 -->
+            <a class="dropdown-item" href="week1/exercise.html">Week 1</a>
+            <a class="dropdown-item" href="week2/exercise.html">Week 2</a>
+            <a class="dropdown-item" href="week3/exercise.html">Week 3</a>
+            <a class="dropdown-item" href="week4/exercise.html">Week 4</a>
+            <a class="dropdown-item" href="week5/exercise.html">Week 5</a>
+            <a class="dropdown-item" href="week6/exercise.html">Week 6</a>
+            <a class="dropdown-item" href="week7/exercise.html">Week 7</a>
+            <a class="dropdown-item" href="week8/exercise.html">Week 8</a>
+            <a class="dropdown-item" href="week9/exercise.html">Week 9</a>
+            <a class="dropdown-item" href="week10/exercise.html">Week 10</a>
+            <a class="dropdown-item" href="week11/exercise.html">Week 11</a>
+            <a class="dropdown-item" href="week12/exercise.html">Week 12</a>
+          </div>
+        </div>
+
+        <!-- Concept Graphs 下拉 -->
+        <div class="dropdown">
+          <div class="dropdown-toggle">
+            <span>Concept graphs</span>
+            <span class="caret"></span>
+          </div>
+          <div class="dropdown-menu">
+            <div class="dropdown-header">Weeks</div>
+            <!-- attach concepts page here -->
+            <a class="dropdown-item" href="week1/concepts.html">Week 1</a>
+            <a class="dropdown-item" href="week2/concepts.html">Week 2</a>
+            <a class="dropdown-item" href="week3/concepts.html">Week 3</a>
+            <a class="dropdown-item" href="week4/concepts.html">Week 4</a>
+            <a class="dropdown-item" href="week5/concepts.html">Week 5</a>
+            <a class="dropdown-item" href="week6/concepts.html">Week 6</a>
+            <a class="dropdown-item" href="week7/concepts.html">Week 7</a>
+            <a class="dropdown-item" href="week8/concepts.html">Week 8</a>
+            <a class="dropdown-item" href="week9/concepts.html">Week 9</a>
+            <a class="dropdown-item" href="week10/concepts.html">Week 10</a>
+            <a class="dropdown-item" href="week11/concepts.html">Week 11</a>
+            <a class="dropdown-item" href="week12/concepts.html">Week 12</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 页面主体 -->
+  <main class="page">
+    <h1 class="page-title">
+      Intermediate Microeconomics – Interactive Graphs
+    </h1>
+    <p class="page-subtitle">
+      Teaching demos and practice graphs for each week of the course.
+    </p>
+
+    <!-- 12 个 week section 卡片 -->
+    <section class="weeks-grid">
+      <!-- Week 1 -->
+      <article class="week-card">
+          <!-- Week image -->
+  <img class="week-thumb" src="assets/week1.png" alt="Week 1 preview" />
+
+  <!-- Text content -->
+  <div class="week-content">
+        <div>
+          <div class="week-header">
+            <div class="week-label">Week</div>
+            <div class="week-number">1</div>
+          </div>
+          <div class="week-title">
+            (placeholder) Title for Week 1 – e.g. Budget constraints
+          </div>
+        </div>
+        <div class="week-actions">
+          <a class="btn btn-outline" href="week1/concepts.html">Concept graphs</a>
+          <a class="btn btn-solid" href="week1/exercise.html">Exercise</a>
+        </div>
+      </article>
+
+      <!-- Week 2 -->
+     <article class="week-card">
+  <!-- Week image -->
+  <img class="week-thumb" src="assets/week2.png" alt="Week 2 preview" />
+
+  <!-- Text content -->
+  <div class="week-content">
+    <div>
+      <div class="week-header">
+        <div class="week-label">Week</div>
+        <div class="week-number">2</div>
+      </div>
+      <div class="week-title">
+        (placeholder) Title for Week 1 – e.g. Budget constraints
+      </div>
+    </div>
+
+    <div class="week-actions">
+       <a class="btn btn-outline" href="week2/concepts.html">Concept graphs</a>
+          <a class="btn btn-solid" href="week2/exercise.html">Exercise</a>
+      </a>
+    </div>
+  </div>
+</article>
+
+
+      <!-- Week 3–12 都先占位，你之后改标题 & 链接 -->
+      <!-- Week 3 -->
+      <article class="week-card">
+          <!-- Week image -->
+  <img class="week-thumb" src="assets/week3.png" alt="Week 3 preview" />
+
+  <!-- Text content -->
+  <div class="week-content">
+        <div>
+          <div class="week-header">
+            <div class="week-label">Week</div>
+            <div class="week-number">3</div>
+          </div>
+          <div class="week-title">
+            (placeholder) Title for Week 3
+          </div>
+        </div>
+        <div class="week-actions">
+         <a class="btn btn-outline" href="week3/concepts.html">Concept graphs</a>
+          <a class="btn btn-solid" href="week3/exercise.html">Exercise</a>
+        </div>
+      </article>
+
+      <!-- Week 4 -->
+      <article class="week-card">
+          <!-- Week image -->
+  <img class="week-thumb" src="assets/week4.png" alt="Week 4 preview" />
+
+  <!-- Text content -->
+  <div class="week-content">
+        <div>
+          <div class="week-header">
+            <div class="week-label">Week</div>
+            <div class="week-number">4</div>
+          </div>
+          <div class="week-title">
+            (placeholder) Title for Week 4
+          </div>
+        </div>
+        <div class="week-actions">
+         <a class="btn btn-outline" href="week4/concepts.html">Concept graphs</a>
+          <a class="btn btn-solid" href="week4/exercise.html">Exercise</a>
+        </div>
+      </article>
+
+      <!-- Week 5 -->
+      <article class="week-card">
+          <!-- Week image -->
+  <img class="week-thumb" src="assets/week5.png" alt="Week 5 preview" />
+
+  <!-- Text content -->
+  <div class="week-content">
+        <div>
+          <div class="week-header">
+            <div class="week-label">Week</div>
+            <div class="week-number">5</div>
+          </div>
+          <div class="week-title">
+            (placeholder) Title for Week 5
+          </div>
+        </div>
+        <div class="week-actions">
+        <a class="btn btn-outline" href="week5/concepts.html">Concept graphs</a>
+          <a class="btn btn-solid" href="week5/exercise.html">Exercise</a>
+        </div>
+      </article>
+
+      <!-- Week 6 -->
+      <article class="week-card">
+          <!-- Week image -->
+  <img class="week-thumb" src="assets/week6.png" alt="Week 6 preview" />
+
+  <!-- Text content -->
+  <div class="week-content">
+        <div>
+          <div class="week-header">
+            <div class="week-label">Week</div>
+            <div class="week-number">6</div>
+          </div>
+          <div class="week-title">
+            (placeholder) Title for Week 6
+          </div>
+        </div>
+        <div class="week-actions">
+         <a class="btn btn-outline" href="week6/concepts.html">Concept graphs</a>
+          <a class="btn btn-solid" href="week6/exercise.html">Exercise</a>
+        </div>
+      </article>
+
+      <!-- Week 7 -->
+      <article class="week-card">
+          <!-- Week image -->
+  <img class="week-thumb" src="assets/week7.png" alt="Week 7 preview" />
+
+  <!-- Text content -->
+  <div class="week-content">
+        <div>
+          <div class="week-header">
+            <div class="week-label">Week</div>
+            <div class="week-number">7</div>
+          </div>
+          <div class="week-title">
+            (placeholder) Title for Week 7
+          </div>
+        </div>
+        <div class="week-actions">
+          <a class="btn btn-outline" href="week7/concepts.html">Concept graphs</a>
+          <a class="btn btn-solid" href="week7/exercise.html">Exercise</a>
+        </div>
+      </article>
+
+      <!-- Week 8 -->
+      <article class="week-card">
+          <!-- Week image -->
+  <img class="week-thumb" src="assets/week8.png" alt="Week 8 preview" />
+
+  <!-- Text content -->
+  <div class="week-content">
+        <div>
+          <div class="week-header">
+            <div class="week-label">Week</div>
+            <div class="week-number">8</div>
+          </div>
+          <div class="week-title">
+            (placeholder) Title for Week 8
+          </div>
+        </div>
+        <div class="week-actions">
+         <a class="btn btn-outline" href="week8/concepts.html">Concept graphs</a>
+          <a class="btn btn-solid" href="week8/exercise.html">Exercise</a>
+        </div>
+      </article>
+
+      <!-- Week 9 -->
+      <article class="week-card">
+          <!-- Week image -->
+  <img class="week-thumb" src="assets/week9.png" alt="Week 9 preview" />
+
+  <!-- Text content -->
+  <div class="week-content">
+        <div>
+          <div class="week-header">
+            <div class="week-label">Week</div>
+            <div class="week-number">9</div>
+          </div>
+          <div class="week-title">
+            (placeholder) Title for Week 9
+          </div>
+        </div>
+        <div class="week-actions">
+          <a class="btn btn-solid" href="week9/concepts.html">Concept graphs</a>
+          <a class="btn btn-outline" href="week9/exercises.html">Exercises</a>
+        </div>
+      </article>
+
+      <!-- Week 10 -->
+      <article class="week-card">
+          <!-- Week image -->
+  <img class="week-thumb" src="assets/week10.png" alt="Week 10 preview" />
+
+  <!-- Text content -->
+  <div class="week-content">
+        <div>
+          <div class="week-header">
+            <div class="week-label">Week</div>
+            <div class="week-number">10</div>
+          </div>
+          <div class="week-title">
+            (placeholder) Title for Week 10
+          </div>
+        </div>
+        <div class="week-actions">
+           <a class="btn btn-solid" href="week10/concepts.html">Concept graphs</a>
+          <a class="btn btn-outline" href="week10/exercises.html">Exercises</a>
+        </div>
+      </article>
+
+      <!-- Week 11 -->
+      <article class="week-card">
+          <!-- Week image -->
+  <img class="week-thumb" src="assets/week11.png" alt="Week 11 preview" />
+
+  <!-- Text content -->
+  <div class="week-content">
+        <div>
+          <div class="week-header">
+            <div class="week-label">Week</div>
+            <div class="week-number">11</div>
+          </div>
+          <div class="week-title">
+            (placeholder) Title for Week 11
+          </div>
+        </div>
+        <div class="week-actions">
+          <a class="btn btn-solid" href="week11/concepts.html">Concept graphs</a>
+          <a class="btn btn-outline" href="week11/exercises.html">Exercises</a>
+        </div>
+      </article>
+
+      <!-- Week 12 -->
+      <article class="week-card">
+          <!-- Week image -->
+  <img class="week-thumb" src="assets/week12.png" alt="Week 12 preview" />
+
+  <!-- Text content -->
+  <div class="week-content">
+        <div>
+          <div class="week-header">
+            <div class="week-label">Week</div>
+            <div class="week-number">12</div>
+          </div>
+          <div class="week-title">
+            (placeholder) Title for Week 12
+          </div>
+        </div>
+        <div class="week-actions">
+          <a class="btn btn-solid" href="week12/concepts.html">Concept graphs</a>
+             <a class="btn btn-outline" href="week12/exercises.html">Exercises</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- About / Credits -->
+    <footer class="footer">
+      <div class="footer-section">
+        <h3>About this project</h3>
+        <p>
+          Interactive Desmos-based visualisations for an Intermediate
+          Microeconomics course. The goal is to turn standard diagrams into
+          manipulable objects that students can explore directly in their browser.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Credits</h3>
+        <p>
+          Graph design and implementation: .<br />
+          Built with Desmos, GitHub Pages, and a suspicious amount of patience.
+        </p>
+      </div>
+       <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>
+         Joshua.B.Miller.......
+        </p>
+      </div>
+    </footer>
+    
+  </main>
+</body>
+</html>
