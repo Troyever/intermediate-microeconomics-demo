@@ -51,18 +51,12 @@
     <h1>Utility Max</h1>
 
     <!-- 1. Desmos section -->
-   <section class="section">
-  <h2>📈 Utility Max</h2>
-  <div class="graph-container">
-    <iframe
-      src="https://www.desmos.com/3d/4sa3r5kkzi?embed"
-      style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
-      loading="lazy"
-      allowfullscreen
-    ></iframe>
-  </div>
-</section>
-
+    <section class="section">
+      <h2>📈 Interactive Graph</h2>
+      <div class="graph-wrapper">
+        <div id="calculator-3d"></div>
+      </div>
+    </section>
 
     <!-- 2. Video section -->
     <section class="section">
@@ -77,7 +71,7 @@
 
     <!-- 3. Textbox section -->
     <section class="section">
-      <h2>📘 Consumer's Problem</h2>
+      <h2>📘 Utility Max</h2>
       <p>
         explainaions here：
         <br><br>
@@ -88,6 +82,45 @@
     </section>
   </div>
 
+<script src="https://www.desmos.com/api/v1.12/calculator.js?apiKey=cc9b5d3cc1c2436aa4d9d33cf55073ca"></script>
+<script>
+  const elt = document.getElementById('calculator-3d');
+  const calc3d = Desmos.Calculator3D(elt, {
+    expressions: true,         //can turn off if needed
+    expressionsCollapsed: true,
+    settingsMenu: false,
+    zoomButtons: true,
+    keypad: false,
+    border: false
+  });
+
+  fetch('Utility-Max.json')
+    .then(r => r.json())
+    .then(state => {
+      calc3d.setState(state);
+      calc3d.setDefaultState(state);   
+    })
+    .catch(e => console.error(e));
+
+  //Export Desmos
+document.getElementById('export-desmos-btn').addEventListener('click', function () {
+  const opts = {
+    format: 'png',        // 'png' /'svg'
+    width: 1200,          
+    height: 800,         
+    targetPixelRatio: 2,   
+    showLabels: true
+  };
+
+  Calc.asyncScreenshot(opts, function (dataUrl) {
+    const a = document.createElement('a');
+    a.href = dataUrl;
+    a.download = 'Utility-Max.png';   
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  });
+});
 
   </script>
 </body>
