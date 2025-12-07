@@ -199,3 +199,15 @@
     top: 100%;
     height: 10px;                /* 桥梁高度：10px 的缓冲区 */
 }
+
+.graph-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#calculator {
+  width: 100%;
+  height: 600px;
+}
+
