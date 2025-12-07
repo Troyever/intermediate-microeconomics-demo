@@ -116,7 +116,7 @@ document.getElementById('export-desmos-btn').addEventListener('click', function 
     showLabels: true
   };
 
-  calculator.asyncScreenshot(opts, function (dataUrl) {
+  Calc.asyncScreenshot(opts, function (dataUrl) {
     const a = document.createElement('a');
     a.href = dataUrl;
     a.download = 'discrete-sd.png';   //--Change the file name-
