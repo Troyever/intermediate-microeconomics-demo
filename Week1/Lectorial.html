@@ -64,7 +64,7 @@
 
   <div class="container">
     <!-- Page title -->
-    <h1>Wk01 Lectorial</h1>
+    <h1>Lectorial</h1>
 
     <!-- 1. Desmos section -->
     <section class="section">
@@ -87,7 +87,7 @@
 
     <!-- 3. Textbox section -->
     <section class="section">
-      <h2>📘 Wk01 Lectorial</h2>
+      <h2>📘 Lectorial</h2>
       <p>
         explainaions here：
         <br><br>
@@ -108,7 +108,7 @@
   });
 
   //Change the json path
-  fetch('Wk01-Lectorial.json')
+  fetch('Lectorial.json')
     .then(response => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
@@ -135,7 +135,7 @@ document.getElementById('export-desmos-btn').addEventListener('click', function 
   Calc.asyncScreenshot(opts, function (dataUrl) {
     const a = document.createElement('a');
     a.href = dataUrl;
-    a.download = 'Wk01-Lectorial.png';   //--Change the file name-
+    a.download = 'Lectorial.png';   //--Change the file name-
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
