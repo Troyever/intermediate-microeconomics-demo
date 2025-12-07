@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini EconGraphs Demo</title>
+
+</head>
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="stylesheet" href="../assets/graph.css?v=1">
+<body>
+  <!-- ================= NAVIGATION BAR ================= -->
+
+
+<nav class="navbar">
+  <div class="nav-left">
+    <a href="/intermediate-microeconomics-project/index.html">Home</a>
+  </div>
+
+  <div class="nav-menu">
+    <div class="dropdown">
+      <span class="dropdown-btn">Concepts ▾</span>
+      <div class="dropdown-content">
+        <a href="/intermediate-microeconomics-project/week1/concepts.html">Week 1</a>
+        <a href="/intermediate-microeconomics-project/week2/concepts.html">Week 2</a>
+        <a href="/intermediate-microeconomics-project/week3/concepts.html">Week 3</a>
+        <a href="/intermediate-microeconomics-project/week4/concepts.html">Week 4</a>
+        <a href="/intermediate-microeconomics-project/week5/concepts.html">Week 5</a>
+        <a href="/intermediate-microeconomics-project/week6/concepts.html">Week 6</a>
+        <a href="/intermediate-microeconomics-project/week7/concepts.html">Week 7</a>
+        <a href="/intermediate-microeconomics-project/week8/concepts.html">Week 8</a>
+        <a href="/intermediate-microeconomics-project/week9/concepts.html">Week 9</a>
+        <a href="/intermediate-microeconomics-project/week10/concepts.html">Week 10</a>
+        <a href="/intermediate-microeconomics-project/week11/concepts.html">Week 11</a>
+        <a href="/intermediate-microeconomics-project/week12/concepts.html">Week 12</a>
+        <!-- Add later -->
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <span class="dropdown-btn">Exercises ▾</span>
+      <div class="dropdown-content">
+        <a href="/intermediate-microeconomics-project/week1/exercise.html">Week 1</a>
+        <a href="/intermediate-microeconomics-project/week2/exercise.html">Week 2</a>
+        <a href="/intermediate-microeconomics-project/week1/exercise.html">Week 3</a>
+        <a href="/intermediate-microeconomics-project/week2/exercise.html">Week 4</a>
+        <a href="/intermediate-microeconomics-project/week1/exercise.html">Week 5</a>
+        <a href="/intermediate-microeconomics-project/week2/exercise.html">Week 6</a>
+        <a href="/intermediate-microeconomics-project/week1/exercise.html">Week 7</a>
+        <a href="/intermediate-microeconomics-project/week2/exercise.html">Week 8</a>
+        <a href="/intermediate-microeconomics-project/week1/exercise.html">Week 9</a>
+        <a href="/intermediate-microeconomics-project/week2/exercise.html">Week 10</a>
+        <a href="/intermediate-microeconomics-project/week1/exercise.html">Week 11</a>
+        <a href="/intermediate-microeconomics-project/week2/exercise.html">Week 12</a>
+      </div>
+    </div>
+     <div class="nav-menu">
+    <button id="export-desmos-btn" class="export-btn">
+      Export graph
+    </button>
+  </div>
+  </div>
+</nav>
+<!-- =================================================== -->
+
+  <div class="container">
+    <!-- Page title -->
+    <h1>Quiz</h1>
+
+    <!-- 1. Desmos section -->
+    <section class="section">
+      <h2>📈 Interactive Graph</h2>
+      <div class="graph-wrapper">
+        <div id="calculator"></div>
+      </div>
+    </section>
+
+    <!-- 2. Video section -->
+    <section class="section">
+      <h2>🎥 Video</h2>
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- 3. Textbox section -->
+    <section class="section">
+      <h2>📘 Quiz</h2>
+      <p>
+        explainaions here：
+        <br><br>
+        · 1. …<br>
+        · 2. …<br>
+        · 3. …
+      </p>
+    </section>
+  </div>
+
+  <!-- Import Desmos API -->
+  <script src="https://www.desmos.com/api/v1.11/calculator.js?apiKey=cc9b5d3cc1c2436aa4d9d33cf55073ca"></script>
+
+<script>
+  const elt = document.getElementById('calculator'); //Change graph ID
+  const Calc = Desmos.GraphingCalculator(elt, {
+    expressionsCollapsed: true
+  });
+
+  //Change the json path
+  fetch('Quiz.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then(state => {
+      Calc.setState(state);
+    })
+    .catch(error => {
+      console.error("Error loading Desmos state:", error);
+    });
+
+  //Export Desmos
+document.getElementById('export-desmos-btn').addEventListener('click', function () {
+  const opts = {
+    format: 'png',        // 'png' /'svg'
+    width: 1200,          
+    height: 800,         
+    targetPixelRatio: 2,   
+    showLabels: true
+  };
+
+  Calc.asyncScreenshot(opts, function (dataUrl) {
+    const a = document.createElement('a');
+    a.href = dataUrl;
+    a.download = 'Quiz.png';   //--Change the file name-
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  });
+});
+
+  </script>
+</body>
+</html>
+
+
+
