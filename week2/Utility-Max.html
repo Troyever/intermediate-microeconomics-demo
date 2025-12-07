@@ -37,12 +37,6 @@
         <a href="#">Week 4</a>
       </div>
     </div>
-     <div class="nav-menu">
-    <button id="export-desmos-btn" class="export-btn">
-      Export graph
-    </button>
-  </div>
-  </div>
 </nav>
 <!-- =================================================== -->
 
@@ -101,26 +95,6 @@
       calc3d.setDefaultState(state);   
     })
     .catch(e => console.error(e));
-
-  //Export Desmos
-document.getElementById('export-desmos-btn').addEventListener('click', function () {
-  const opts = {
-    format: 'png',        // 'png' /'svg'
-    width: 1200,          
-    height: 800,         
-    targetPixelRatio: 2,   
-    showLabels: true
-  };
-
-  calc3d.asyncScreenshot(opts, function (dataUrl) {
-    const a = document.createElement('a');
-    a.href = dataUrl;
-    a.download = 'Utility-Max.png';   
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-  });
-});
 
   </script>
 </body>
