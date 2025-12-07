@@ -107,23 +107,26 @@
     .catch(error => {
       console.error("Error loading Desmos state:", error);
     });
+  
+  //Export Desmos
 document.getElementById('export-desmos-btn').addEventListener('click', function () {
-  // Export Pic size and clearity
   const opts = {
-    format: 'png',        // 'png' / 'svg'
+    format: 'png',        // 'png' /'svg'
     width: 1200,          
-    height: 800,          
-    targetPixelRatio: 2,
+    height: 800,         
+    targetPixelRatio: 2,   
     showLabels: true
   };
-  calculator.asyncScreenshot(opts, function (dataUrl) {
+
+  Calc.asyncScreenshot(opts, function (dataUrl) {
     const a = document.createElement('a');
     a.href = dataUrl;
-    a.download = 'Indifference-Curves.png';   // Change to the graph name
+    a.download = 'discrete-sd.png';   //--Change the file name-
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
-  }
+  });
+});
 
   </script>
 </body>
