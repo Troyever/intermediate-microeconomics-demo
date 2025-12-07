@@ -51,12 +51,17 @@
     <h1>Utility Max</h1>
 
     <!-- 1. Desmos section -->
-    <section class="section">
-      <h2>📈 Interactive Graph</h2>
-      <div class="graph-wrapper">
-        <div id="calculator"></div>
-      </div>
-    </section>
+   <section class="section">
+  <h2>📈 Utility Max</h2>
+  <div class="graph-container">
+    <iframe
+      src="https://www.desmos.com/3d/4sa3r5kkzi"
+      style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
+      allowfullscreen
+    ></iframe>
+  </div>
+</section>
+
 
     <!-- 2. Video section -->
     <section class="section">
@@ -82,49 +87,6 @@
     </section>
   </div>
 
-  <!-- Import Desmos API -->
-  <script src="https://www.desmos.com/api/v1.11/calculator.js?apiKey=cc9b5d3cc1c2436aa4d9d33cf55073ca"></script>
-
-<script>
-  const elt = document.getElementById('calculator'); //Change graph ID
-  const Calc = Desmos.GraphingCalculator(elt, {
-    expressionsCollapsed: true
-  });
-
-  //Change the json path
-  fetch('Utility-Max.json')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
-      return response.json();
-    })
-    .then(state => {
-      Calc.setState(state);
-    })
-    .catch(error => {
-      console.error("Error loading Desmos state:", error);
-    });
-
-  //Export Desmos
-document.getElementById('export-desmos-btn').addEventListener('click', function () {
-  const opts = {
-    format: 'png',        // 'png' /'svg'
-    width: 1200,          
-    height: 800,         
-    targetPixelRatio: 2,   
-    showLabels: true
-  };
-
-  Calc.asyncScreenshot(opts, function (dataUrl) {
-    const a = document.createElement('a');
-    a.href = dataUrl;
-    a.download = 'Utility-Max.png';   
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-  });
-});
 
   </script>
 </body>
