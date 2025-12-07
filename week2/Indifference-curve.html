@@ -97,7 +97,8 @@
     });
 
     // Paste JSON between String.raw` and `);
-    const desmosState = JSON.parse(String.raw`{
+    const desmosState = JSON.parse(String.raw`
+    {
   "version": 11,
   "randomSeed": "d65f9ba9cf2ed86824b7e8365f643283",
   "graph": {
@@ -648,7 +649,8 @@
   },
   "includeFunctionParametersInRandomSeed": true,
   "doNotMigrateMovablePointStyle": true
-}`);
+}
+`);
     // Export Desmos
 document.getElementById('export-desmos-btn').addEventListener('click', function () {
   // Export Pic size and clearity
