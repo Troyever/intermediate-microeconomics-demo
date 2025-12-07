@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini EconGraphs Demo</title>
+
+</head>
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="stylesheet" href="../assets/graph.css">
+<body>
+  <!-- ================= NAVIGATION BAR ================= -->
+
+
+<nav class="navbar">
+  <div class="nav-left">
+    <a href="/intermediate-microeconomics-project/index.html">Home</a>
+  </div>
+
+  <div class="nav-menu">
+    <div class="dropdown">
+      <span class="dropdown-btn">Concepts ▾</span>
+      <div class="dropdown-content">
+        <a href="/intermediate-microeconomics-project/week1/concepts.html">Week 1</a>
+        <a href="/intermediate-microeconomics-project/week2/concepts.html">Week 2</a>
+        <a href="#">Week 3</a>
+        <a href="#">Week 4</a>
+        <!-- 以后继续添加 -->
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <span class="dropdown-btn">Exercises ▾</span>
+      <div class="dropdown-content">
+        <a href="/intermediate-microeconomics-project/week1/exercises.html">Week 1</a>
+        <a href="/intermediate-microeconomics-project/week2/exercises.html">Week 2</a>
+        <a href="#">Week 3</a>
+        <a href="#">Week 4</a>
+      </div>
+    </div>
+     <div class="nav-menu">
+    <button id="export-desmos-btn" class="export-btn">
+      Export graph
+    </button>
+  </div>
+  </div>
+</nav>
+<!-- =================================================== -->
+
+  <div class="container">
+    <!--Topics-->
+    <h1>Indifference Curves</h1>
+
+    <!-- 1. Desmos graph section -->
+  //Change the div-id as well
+    <section class="section">
+      <h2>📈 Interactive Graph</h2>
+      <div class="graph-wrapper">
+        <div id="Indifference-Curves"></div>
+      </div>
+    </section>
+
+    <!-- 2. Video section -->
+    <section class="section">
+      <h2>🎥 Video</h2>
+      <div class="video-frame">
+  
+  <!--upload video here-->
+        <iframe
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- 3. word box section -->
+    <section class="section">
+      <h2>📘 Indifference Curves</h2>
+      <p>
+        explainaions here：
+        <br><br>
+        · 1. …<br>
+        · 2. …<br>
+        · 3. …
+      </p>
+    </section>
+  </div>
+
+  <!-- Import Desmos API -->
+  <script src="https://www.desmos.com/api/v1.11/calculator.js?apiKey=cc9b5d3cc1c2436aa4d9d33cf55073ca"></script>
+
+  <!-- Paste Desmos JSON here -->
+  <script>
+    const elt = document.getElementById('Indifference-Curves');
+    const calculator = Desmos.GraphingCalculator(elt, {
+      expressions: true,
+      settingsMenu: false
+    });
+
+    // Paste JSON between String.raw` and `);
+    const desmosState = JSON.parse(String.raw`{
+  "version": 11,
+  "randomSeed": "d65f9ba9cf2ed86824b7e8365f643283",
+  "graph": {
+    "viewport": {
+      "xmin": -1.7912444173173814,
+      "ymin": -2.468020551384358,
+      "xmax": 18.20875558268311,
+      "ymax": 6.056504765071546
+    },
+    "showGrid": false,
+    "xAxisLabel": "Soda",
+    "yAxisLabel": "Pizza",
+    "xAxisNumbers": false,
+    "yAxisNumbers": false,
+    "polarNumbers": false,
+    "__v12ViewportLatexStash": {
+      "xmin": "-1.7912444173173814",
+      "xmax": "18.20875558268311",
+      "ymin": "-2.468020551384358",
+      "ymax": "6.056504765071546"
+    }
+  },
+  "expressions": {
+    "list": [
+      {
+        "type": "text",
+        "id": "706",
+        "text": "Indifference curves and MRS"
+      },
+      {
+        "type": "text",
+        "id": "705",
+        "text": "Creator: Joshua B. Miller, Department of Economics, University of Melbourne, joshua.benjamin.miller@gmail.com, https://www.joshua-benjamin-miller.com/"
+      },
+      {
+        "type": "folder",
+        "id": "688",
+        "title": "1. Utility function, MRS"
+      },
+      {
+        "type": "expression",
+        "id": "689",
+        "folderId": "688",
+        "color": "#c74440",
+        "latex": "\\alpha=0.6",
+        "slider": {
+          "hardMin": true,
+          "hardMax": true,
+          "min": "0",
+          "max": "5",
+          "step": ".1"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "756",
+        "folderId": "688",
+        "color": "#c74440",
+        "latex": "\\beta=1",
+        "slider": {
+          "hardMin": true,
+          "hardMax": true,
+          "min": "0",
+          "max": "5",
+          "step": ".1"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "1",
+        "folderId": "688",
+        "color": "#c74440",
+        "latex": "u\\left(x,y\\right)=x^{\\alpha}y^{\\beta}"
+      },
+      {
+        "type": "expression",
+        "id": "755",
+        "folderId": "688",
+        "color": "#000000",
+        "latex": "M_{RS}\\left(x,y\\right)=\\frac{\\frac{d}{dx}u\\left(x,y\\right)}{\\frac{d}{dy}u\\left(x,y\\right)}"
+      },
+      {
+        "type": "folder",
+        "id": "693",
+        "title": "2.  Fixed Indifference curves",
+        "hidden": true,
+        "collapsed": true
+      },
+      {
+        "type": "expression",
+        "id": "694",
+        "folderId": "693",
+        "color": "#6042a6",
+        "latex": "u_{1}=0",
+        "slider": {
+          "hardMin": true,
+          "hardMax": true,
+          "min": "0",
+          "max": "100",
+          "step": "1"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "695",
+        "folderId": "693",
+        "color": "#000000",
+        "latex": "\\Delta_{u}=1",
+        "slider": {
+          "hardMin": true,
+          "hardMax": true,
+          "min": "1",
+          "max": "100",
+          "step": "1"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "696",
+        "folderId": "693",
+        "color": "#c74440",
+        "latex": "N=8",
+        "slider": {
+          "hardMin": true,
+          "hardMax": true,
+          "min": "2",
+          "step": "1"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "697",
+        "folderId": "693",
+        "color": "#2d70b3",
+        "latex": "U=\\left[u_{1}+0\\Delta_{u},u_{1}+1\\Delta_{u}...u_{1}+N\\Delta_{u}\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "2",
+        "folderId": "693",
+        "color": "#2d70b3",
+        "latex": "U\\left\\{x>0\\right\\}\\left\\{y>0\\right\\}=u(x,y)",
+        "colorLatex": "C_{olorPalette}"
+      },
+      {
+        "type": "text",
+        "id": "749",
+        "folderId": "693",
+        "text": "number of colors"
+      },
+      {
+        "type": "folder",
+        "id": "699",
+        "title": "3. Movable Indifference curve",
+        "hidden": true,
+        "collapsed": true
+      },
+      {
+        "type": "expression",
+        "id": "3",
+        "folderId": "699",
+        "color": "#388c46",
+        "latex": "U_{tility}=6.5",
+        "slider": {
+          "hardMin": true,
+          "hardMax": true,
+          "min": ".01",
+          "max": "40"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "4",
+        "folderId": "699",
+        "color": "#388c46",
+        "latex": "U_{tility}\\left\\{x>0\\right\\}\\left\\{y>0\\right\\}=u\\left(x,y\\right)"
+      },
+      {
+        "type": "folder",
+        "id": "701",
+        "title": "4. Moveable bundle with indifference curve",
+        "collapsed": true
+      },
+      {
+        "type": "text",
+        "id": "15",
+        "folderId": "701",
+        "text": "bundle and its indifference curve"
+      },
+      {
+        "type": "expression",
+        "id": "6",
+        "folderId": "701",
+        "color": "#c74440",
+        "latex": "x_{0}=3.7",
+        "slider": {
+          "hardMin": true,
+          "hardMax": true,
+          "min": "0",
+          "max": "50"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "7",
+        "folderId": "701",
+        "color": "#2d70b3",
+        "latex": "y_{0}=4.76",
+        "slider": {
+          "hardMin": true,
+          "hardMax": true,
+          "min": "0",
+          "max": "50"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "5",
+        "folderId": "701",
+        "color": "#000000",
+        "latex": "\\left(x_{0},y_{0}\\right)",
+        "labelOrientation": "right"
+      },
+      {
+        "type": "expression",
+        "id": "724",
+        "folderId": "701",
+        "color": "#000000",
+        "latex": "\\operatorname{polygon}\\left(\\left(x_{0},0\\right),\\left(x_{0},y_{0}\\right)\\right)",
+        "lineStyle": "DOTTED",
+        "lineOpacity": ".5",
+        "lineWidth": "1"
+      },
+      {
+        "type": "expression",
+        "id": "727",
+        "folderId": "701",
+        "color": "#000000",
+        "latex": "\\left(x_{0},0\\right)",
+        "showLabel": true,
+        "label": "${x_0}",
+        "pointStyle": "OPEN",
+        "dragMode": "NONE",
+        "labelOrientation": "below"
+      },
+      {
+        "type": "expression",
+        "id": "728",
+        "folderId": "701",
+        "color": "#000000",
+        "latex": "\\left(0,y_{0}\\right)",
+        "showLabel": true,
+        "label": "${y_0}",
+        "pointStyle": "OPEN",
+        "dragMode": "NONE",
+        "labelOrientation": "left"
+      },
+      {
+        "type": "expression",
+        "id": "726",
+        "folderId": "701",
+        "color": "#000000",
+        "latex": "\\operatorname{polygon}\\left(\\left(0,y_{0}\\right),\\left(x_{0},y_{0}\\right)\\right)",
+        "lineStyle": "DOTTED",
+        "lineOpacity": ".5",
+        "lineWidth": "1"
+      },
+      {
+        "type": "expression",
+        "id": "8",
+        "folderId": "701",
+        "color": "#000000",
+        "latex": "u\\left(x_{0},y_{0}\\right)\\left\\{x>0\\right\\}\\left\\{y>0\\right\\}=u\\left(x,y\\right)"
+      },
+      {
+        "type": "folder",
+        "id": "730",
+        "title": "5. Label utility",
+        "collapsed": true
+      },
+      {
+        "type": "expression",
+        "id": "18",
+        "folderId": "730",
+        "color": "#6042a6",
+        "latex": "u_{0}=\\frac{\\operatorname{round}\\left(100u\\left(x_{0},y_{0}\\right)\\right)}{100}"
+      },
+      {
+        "type": "expression",
+        "id": "731",
+        "folderId": "730",
+        "color": "#000000",
+        "latex": "\\left(x_{0},y_{0}\\right)",
+        "showLabel": true,
+        "label": "`u(x,y) =x^\\alpha y^{\\beta}=x^{${\\alpha}} y^{${\\beta}}=${u_0}`",
+        "hidden": true,
+        "dragMode": "NONE",
+        "labelOrientation": "above_right"
+      },
+      {
+        "type": "expression",
+        "id": "758",
+        "folderId": "730",
+        "color": "#000000",
+        "latex": "\\left(x_{0},y_{0}\\right)",
+        "label": "`u(x,y) =xy=${u_0}`",
+        "hidden": true,
+        "dragMode": "NONE",
+        "labelOrientation": "above_right"
+      },
+      {
+        "type": "expression",
+        "id": "757",
+        "folderId": "730",
+        "color": "#2d70b3"
+      },
+      {
+        "type": "folder",
+        "id": "723",
+        "title": "6. Label continuous MRS",
+        "collapsed": true
+      },
+      {
+        "type": "text",
+        "id": "704",
+        "folderId": "723",
+        "text": "MRS tangency"
+      },
+      {
+        "type": "expression",
+        "id": "22",
+        "folderId": "723",
+        "color": "#388c46",
+        "latex": "m=M_{RS}\\left(x_{0},y_{0}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "702",
+        "folderId": "723",
+        "color": "#000000",
+        "latex": "l=1",
+        "slider": {
+          "hardMin": true,
+          "min": ".25",
+          "step": ".25"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "19",
+        "folderId": "723",
+        "color": "#000000",
+        "latex": "y-y_{0}=-m\\cdot\\left(x-x_{0}\\right)\\left\\{\\left(1-l\\right)x_{0}<x<\\left(1+l\\right)x_{0}\\right\\}",
+        "lineStyle": "DOTTED",
+        "lineOpacity": ".6",
+        "lineWidth": "1.5"
+      },
+      {
+        "type": "expression",
+        "id": "23",
+        "folderId": "723",
+        "color": "#6042a6",
+        "latex": "m_{r}=\\frac{\\operatorname{round}\\left(100m\\right)}{100}"
+      },
+      {
+        "type": "expression",
+        "id": "20",
+        "folderId": "723",
+        "color": "#000000",
+        "latex": "\\left(\\left(1+l\\right)x_{0},y_{0}-m\\cdot lx_{0}\\right)",
+        "showLabel": true,
+        "label": "`MRS=\\frac{\\frac{dU}{dx}}{\\frac{dU}{dy}}=${m_r}`",
+        "hidden": true,
+        "labelOrientation": "below"
+      },
+      {
+        "type": "folder",
+        "id": "712",
+        "title": "7. Discrete MRS approximation"
+      },
+      {
+        "type": "expression",
+        "id": "713",
+        "folderId": "712",
+        "color": "#2d70b3",
+        "latex": "x_{1}=9.52",
+        "slider": {
+          "hardMin": true,
+          "hardMax": true,
+          "min": "0",
+          "max": "10x_{0}"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "714",
+        "folderId": "712",
+        "color": "#388c46",
+        "latex": "y_{1}=\\left(\\frac{u\\left(x_{0},y_{0}\\right)}{x_{1}^{\\alpha}}\\right)^{\\frac{1}{\\beta}}"
+      },
+      {
+        "type": "expression",
+        "id": "717",
+        "folderId": "712",
+        "color": "#fa7e19",
+        "latex": "\\left(x_{1},y_{1}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "718",
+        "folderId": "712",
+        "color": "#fa7e19",
+        "latex": "\\operatorname{polygon}\\left(\\left(x_{0},y_{0}\\right),\\left(x_{1},y_{1}\\right)\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "732",
+        "folderId": "712",
+        "color": "#000000",
+        "latex": "\\Delta_{x}=x_{1}-x_{0}"
+      },
+      {
+        "type": "expression",
+        "id": "733",
+        "folderId": "712",
+        "color": "#c74440",
+        "latex": "\\Delta_{y}=y_{1}-y_{0}"
+      },
+      {
+        "type": "text",
+        "id": "736",
+        "folderId": "712",
+        "text": "round for display purposes"
+      },
+      {
+        "type": "expression",
+        "id": "734",
+        "folderId": "712",
+        "color": "#2d70b3",
+        "latex": "\\Delta_{yr}=\\frac{\\operatorname{round}\\left(100\\Delta_{y}\\right)}{100}"
+      },
+      {
+        "type": "expression",
+        "id": "722",
+        "folderId": "712",
+        "color": "#c74440",
+        "latex": "M_{RSd}=-\\frac{\\operatorname{round}\\left(100\\frac{\\Delta_{y}}{\\Delta_{x}}\\right)}{100}"
+      },
+      {
+        "type": "expression",
+        "id": "719",
+        "folderId": "712",
+        "color": "#fa7e19",
+        "latex": ".5\\left(x_{0},y_{0}\\right)+.5\\left(x_{1},y_{1}\\right)",
+        "showLabel": true,
+        "label": "`Discrete MRS\\approx -\\frac{\\Delta Y}{\\Delta X}=-\\frac{${\\Delta_yr}}{${\\Delta_x}}=${M_RSd}`",
+        "hidden": true,
+        "labelOrientation": "above_right"
+      },
+      {
+        "type": "folder",
+        "id": "708",
+        "title": "Movable labels",
+        "hidden": true,
+        "collapsed": true
+      },
+      {
+        "type": "expression",
+        "id": "709",
+        "folderId": "708",
+        "color": "#000000",
+        "latex": "\\left(17.94,-3.96\\right)",
+        "showLabel": true,
+        "label": "Pizza",
+        "hidden": true,
+        "dragMode": "XY",
+        "labelSize": "2",
+        "pointSize": "2"
+      },
+      {
+        "type": "expression",
+        "id": "710",
+        "folderId": "708",
+        "color": "#000000",
+        "latex": "\\left(-5.74,14.74\\right)",
+        "showLabel": true,
+        "label": "Soda",
+        "hidden": true,
+        "dragMode": "XY",
+        "labelSize": "2",
+        "labelAngle": "\\frac{\\pi}{2}"
+      },
+      {
+        "type": "folder",
+        "id": "752",
+        "title": "Color Palatte",
+        "hidden": true,
+        "collapsed": true
+      },
+      {
+        "type": "text",
+        "id": "738",
+        "folderId": "752",
+        "text": "The number of colors in the palette"
+      },
+      {
+        "type": "expression",
+        "id": "747",
+        "folderId": "752",
+        "color": "#000000",
+        "latex": "I=\\left[1...N+1\\right]"
+      },
+      {
+        "type": "text",
+        "id": "754",
+        "folderId": "752",
+        "text": "The intensity of each RGB value as we move through the palette"
+      },
+      {
+        "type": "expression",
+        "id": "741",
+        "folderId": "752",
+        "color": "#6042a6",
+        "latex": "R=255\\frac{\\left(I-1\\right)}{N}"
+      },
+      {
+        "type": "expression",
+        "id": "739",
+        "folderId": "752",
+        "color": "#2d70b3",
+        "latex": "G=0I"
+      },
+      {
+        "type": "expression",
+        "id": "750",
+        "folderId": "752",
+        "color": "#2d70b3",
+        "latex": "B=255\\left(1-\\frac{\\left(I-1\\right)}{N}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "740",
+        "folderId": "752",
+        "color": "#388c46",
+        "latex": "C_{olorPalette}=\\operatorname{rgb}(R,G,B)"
+      }
+    ]
+  },
+  "includeFunctionParametersInRandomSeed": true,
+  "doNotMigrateMovablePointStyle": true
+}`);
+    // Export Desmos
+document.getElementById('export-desmos-btn').addEventListener('click', function () {
+  // Export Pic size and clearity
+  const opts = {
+    format: 'png',        // 'png' / 'svg'
+    width: 1200,          
+    height: 800,          
+    targetPixelRatio: 2   
+  };
+  calculator.asyncScreenshot(opts, function (dataUrl) {
+    const a = document.createElement('a');
+    a.href = dataUrl;
+    a.download = 'Indifference-Curves.png';   // Change to the graph name
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  });
+});
+
+
+    calculator.setState(desmosState);
+  </script>
+</body>
+</html>
