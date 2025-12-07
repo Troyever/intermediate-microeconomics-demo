@@ -112,7 +112,7 @@ document.getElementById('export-desmos-btn').addEventListener('click', function 
     showLabels: true
   };
 
-  Calc3d.asyncScreenshot(opts, function (dataUrl) {
+  calc3d.asyncScreenshot(opts, function (dataUrl) {
     const a = document.createElement('a');
     a.href = dataUrl;
     a.download = 'Utility-Max.png';   
