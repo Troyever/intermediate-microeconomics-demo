@@ -97,7 +97,7 @@
     });
 
     // Paste JSON between String.raw` and `);
-    const desmosState = JSON.parse(String.raw`
+    const desmosState = 
     {
   "version": 11,
   "randomSeed": "d65f9ba9cf2ed86824b7e8365f643283",
@@ -668,8 +668,7 @@ document.getElementById('export-desmos-btn').addEventListener('click', function 
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
-  });
-});
+  }
 
 
     calculator.setState(desmosState);
