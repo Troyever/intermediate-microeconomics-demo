@@ -656,7 +656,8 @@ document.getElementById('export-desmos-btn').addEventListener('click', function 
     format: 'png',        // 'png' / 'svg'
     width: 1200,          
     height: 800,          
-    targetPixelRatio: 2   
+    targetPixelRatio: 2,
+    showLabels: true
   };
   calculator.asyncScreenshot(opts, function (dataUrl) {
     const a = document.createElement('a');
