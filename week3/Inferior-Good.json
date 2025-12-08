@@ -1,0 +1,210 @@
+{
+  "version": 11,
+  "randomSeed": "9f22e696c00040aa0901db20c89af2e8",
+  "graph": {
+    "viewport": {
+      "xmin": -0.8856253437591475,
+      "ymin": -2.1896836530384096,
+      "xmax": 9.38062072941409,
+      "ymax": 5.204621255948332
+    },
+    "__v12ViewportLatexStash": {
+      "xmin": "-0.8856253437591475",
+      "xmax": "9.38062072941409",
+      "ymin": "-2.1896836530384096",
+      "ymax": "5.204621255948332"
+    }
+  },
+  "expressions": {
+    "list": [
+      {
+        "type": "text",
+        "id": "34",
+        "text": "X is an inferior good, as can be seen by varying Income "
+      },
+      {
+        "type": "text",
+        "id": "40",
+        "text": "these preferences are strange"
+      },
+      {
+        "type": "text",
+        "id": "38",
+        "text": "note: this code accounts for the corner solution, and the interior solution, but the rare special configuration of p1,p2,I such that the corner and interior give the same max utility "
+      },
+      {
+        "type": "text",
+        "id": "28",
+        "text": "Budget Parameters"
+      },
+      {
+        "type": "expression",
+        "id": "7",
+        "color": "#2d70b3",
+        "latex": "p_{1}=1",
+        "slider": {
+          "hardMin": true,
+          "min": "0"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "8",
+        "color": "#388c46",
+        "latex": "p_{2}=4",
+        "slider": {
+          "hardMin": true,
+          "hardMax": true,
+          "min": "0",
+          "step": "1"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "9",
+        "color": "#6042a6",
+        "latex": "I=9.77",
+        "slider": {
+          "hardMin": true,
+          "hardMax": true,
+          "min": "0",
+          "max": "12"
+        }
+      },
+      {
+        "type": "text",
+        "id": "25",
+        "text": "Budget set"
+      },
+      {
+        "type": "expression",
+        "id": "10",
+        "color": "#388c46",
+        "latex": "p_{1}x+p_{2}y=I\\left\\{x\\ge0\\right\\}\\left\\{y\\ge0\\right\\}"
+      },
+      {
+        "type": "text",
+        "id": "23",
+        "text": "Definition of Utility function"
+      },
+      {
+        "type": "expression",
+        "id": "3",
+        "color": "#388c46",
+        "latex": "a=1.2",
+        "hidden": true,
+        "slider": {
+          "hardMin": true,
+          "min": "0"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "19",
+        "color": "#388c46",
+        "latex": "u\\left(x,y\\right)=a\\ln\\left(x\\right)+\\frac{y^{2}}{2}"
+      },
+      {
+        "type": "text",
+        "id": "30",
+        "text": "movable indifference curve"
+      },
+      {
+        "type": "expression",
+        "id": "18",
+        "color": "#2d70b3",
+        "latex": "u_{1}=3.6",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "2",
+        "color": "#2d70b3",
+        "latex": "u_{1}\\left\\{x>0\\right\\}\\left\\{y>0\\right\\}=u\\left(x,y\\right)"
+      },
+      {
+        "type": "text",
+        "id": "32",
+        "text": "Optimum"
+      },
+      {
+        "type": "expression",
+        "id": "5",
+        "color": "#c74440",
+        "latex": "\\left(d_{x},d_{y}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "17",
+        "color": "#c74440",
+        "latex": "u\\left(d_{x},d_{y}\\right)\\left\\{x>0\\right\\}\\left\\{y>0\\right\\}=u\\left(x,y\\right)"
+      },
+      {
+        "type": "text",
+        "id": "45",
+        "text": "choose between the interior or corner solution depending on paramters"
+      },
+      {
+        "type": "expression",
+        "id": "15",
+        "color": "#6042a6",
+        "latex": "d_{x}=\\left\\{I\\ge2\\sqrt{a}p_{2}:X\\left(p_{1},p_{2},I\\right),\\frac{I}{p_{1}}\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "16",
+        "color": "#000000",
+        "latex": "d_{y}=\\left\\{I\\ge2\\sqrt{a}p_{2}:Y\\left(p_{1},p_{2},I\\right),0\\right\\}"
+      },
+      {
+        "type": "text",
+        "id": "47",
+        "text": "interior solution"
+      },
+      {
+        "type": "expression",
+        "id": "6",
+        "color": "#c74440",
+        "latex": "X\\left(p_{x},p_{y},I_{income}\\right)=\\frac{1}{2p_{x}}\\left(I_{income}-\\sqrt{I_{income}^{2}-4ap_{y}^{2}}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "13",
+        "color": "#c74440",
+        "latex": "Y\\left(p_{x},p_{y},I_{income}\\right)=\\frac{1}{2p_{y}}\\left(I_{income}+\\sqrt{I_{income}^{2}-4ap_{y}^{2}}\\right)"
+      },
+      {
+        "type": "text",
+        "id": "42",
+        "text": "Difference between the interior and the corner solution. If it is zero, then plot both points as they yield the same utility. (note: it is highly unlikely to pick budget parameters with the precision that satisfies this non-linear equation)"
+      },
+      {
+        "type": "expression",
+        "id": "26",
+        "color": "#388c46",
+        "latex": "d_{iffU}=u\\left(X\\left(p_{1},p_{2},I\\right),Y\\left(p_{1},p_{2},I\\right)\\right)-u\\left(\\frac{I}{p_{1}},0\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "43",
+        "color": "#c74440",
+        "latex": "\\left[\\left(X\\left(p_{1},p_{2},I\\right),Y\\left(p_{1},p_{2},I\\right)\\right),\\left(\\frac{I}{p_{1}},0\\right)\\right]\\left\\{d_{iffU}=0\\right\\}",
+        "pointStyle": "CROSS",
+        "dragMode": "NONE",
+        "pointSize": "12"
+      },
+      {
+        "type": "expression",
+        "id": "14",
+        "color": "#388c46"
+      },
+      {
+        "type": "expression",
+        "id": "11",
+        "color": "#c74440"
+      }
+    ]
+  },
+  "includeFunctionParametersInRandomSeed": true,
+  "doNotMigrateMovablePointStyle": true
+}
