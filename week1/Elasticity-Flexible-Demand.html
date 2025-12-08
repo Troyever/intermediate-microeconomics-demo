@@ -54,28 +54,8 @@
   </div>
 
 <!--Desmos-->
-<script>
-  const elt = document.getElementById('calculator'); //Change graph ID
-  const Calc = Desmos.GraphingCalculator(elt, {
-    expressionsCollapsed: true
-  });
-
-  //Change the json path
-  fetch('Elasticity-Flexible-Demand.json')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
-      return response.json();
-    })
-    .then(state => {
-      Calc.setState(state);
-    })
-    .catch(error => {
-      console.error("Error loading Desmos state:", error);
-    });
-  </script>
-    //Export Desmos
+<script src="../assets/desmos-loader.js"></script>
+    <!--Export Desmos-->
 <script src="../assets/export-desmos.js"></script>
 </body>
 </html>
