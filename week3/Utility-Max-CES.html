@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Mini EconGraphs Demo</title>
-
-</head>
-<link rel="stylesheet" href="../assets/site.css">
+  
+ <!-- Import Desmos API -->
+  <script src="https://www.desmos.com/api/v1.11/calculator.js?apiKey=cc9b5d3cc1c2436aa4d9d33cf55073ca"></script>
+   <!-- ================= NAVIGATION BAR ================= -->
+  <link rel="stylesheet" href="../assets/site.css">
 <link rel="stylesheet" href="../assets/graph.css?v=1">
+  
+</head>
 <body>
-<!-- ================= NAVIGATION BAR ================= -->
-<body>
+  
   <div id="navbar-container"></div>
   <script src="../assets/navbarG-loader.js"></script>
 <!-- =================================================== -->
@@ -49,52 +52,10 @@
     </section>
   </div>
 
-  <!-- Import Desmos API -->
-  <script src="https://www.desmos.com/api/v1.11/calculator.js?apiKey=cc9b5d3cc1c2436aa4d9d33cf55073ca"></script>
-
-<script>
-  const elt = document.getElementById('calculator'); //Change graph ID
-  const Calc = Desmos.GraphingCalculator(elt, {
-    expressionsCollapsed: true
-  });
-
-  //Change the json path
-  fetch('Utility-Max-CES.json')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
-      return response.json();
-    })
-    .then(state => {
-      Calc.setState(state);
-    })
-    .catch(error => {
-      console.error("Error loading Desmos state:", error);
-    });
-
-  //Export Desmos
-document.getElementById('export-desmos-btn').addEventListener('click', function () {
-  const opts = {
-    format: 'png',        // 'png' /'svg'
-    width: 1200,          
-    height: 800,         
-    targetPixelRatio: 2,   
-    showLabels: true
-  };
-
-  Calc.asyncScreenshot(opts, function (dataUrl) {
-    const a = document.createElement('a');
-    a.href = dataUrl;
-    a.download = 'Utility0Max-CES.png';   
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-  });
-});
-
-  </script>
+<!--Desmos-->
+<script src="../assets/desmos-loader.js"></script>
+    <!--Export Desmos-->
+<script src="../assets/export-desmos.js?v=1"></script>
 </body>
 </html>
-
 
