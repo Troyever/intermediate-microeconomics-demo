@@ -4,7 +4,8 @@ function loadNavbar() {
     .then(html => {
       const container = document.getElementById("navbar-container");
       if (container) container.innerHTML = html;
-    })
+    document.dispatchEvent(new Event("navbar-loaded"));
+})
     .catch(err => console.error("Navbar load error:", err));
 }
 
