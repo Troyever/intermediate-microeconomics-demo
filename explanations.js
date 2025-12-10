@@ -1,5 +1,3 @@
-// assets/explanations.js
-
 // all explanaions are recorded under this section
 const EXPLANATIONS = {
   // Week 1, 4 axis cost&benefit
