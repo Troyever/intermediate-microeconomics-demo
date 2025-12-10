@@ -63,8 +63,7 @@
     boxes.forEach(function (box) {
       const id = box.dataset.explainId;
 
-     - if (window.EXPLANATIONS && EXPLANATIONS[id]) {
-+ if (typeof EXPLANATIONS !== "undefined" && EXPLANATIONS[id]) {
+      if (typeof EXPLANATIONS !== "undefined" && EXPLANATIONS[id]) {
     box.innerHTML = EXPLANATIONS[id];
   } else {
     console.warn("Missing explanation for id:", id);
