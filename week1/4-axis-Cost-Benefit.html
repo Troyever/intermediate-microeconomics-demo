@@ -63,11 +63,12 @@
     boxes.forEach(function (box) {
       const id = box.dataset.explainId; // 读 data-explain-id 的值
 
-      if (window.EXPLANATIONS && EXPLANATIONS[id]) {
-        box.innerHTML = EXPLANATIONS[id];   
-      } else {
-        console.warn("Missing explanation for id:", id);
-      }
+     - if (window.EXPLANATIONS && EXPLANATIONS[id]) {
++ if (typeof EXPLANATIONS !== "undefined" && EXPLANATIONS[id]) {
+    box.innerHTML = EXPLANATIONS[id];
+  } else {
+    console.warn("Missing explanation for id:", id);
+  }
     });
   });
 </script>
