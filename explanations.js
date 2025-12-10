@@ -139,4 +139,74 @@ const EXPLANATIONS = {
     <p>2. Exp 1.</p>
     <p>3. AExp 1.</p>
   `,
+
+   //Week4 Aggregate-Demand
+  "Aggregate-Demand": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+     //Week4 Consumers-Problem-HW
+  "Consumers-Problem-HW": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+     //Week4 Curves&Demand
+  "Curves&Demand": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+     //Week4 Curves-Expansion-Demand
+  "SCurves-Expansion-Demand": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+     //Week4 Ex-2023-Q3
+  "Ex-2023-Q3": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+     //Week4 IE-SE-CobbDouglas
+  "IE-SE-CobbDouglas": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+     //Week4 IE-SE-Quasilinear
+  "IE-SE-Quasilinear": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+     //Week4 Intertemporal-consumption
+  "Intertemporal-consumption": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+     //Week4 Time-IE-SE
+  "Time-IE-SE": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+     //Week4 Consumer-Optimization
+  "Consumer-Optimization": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
 };
