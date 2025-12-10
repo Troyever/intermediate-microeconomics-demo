@@ -43,13 +43,7 @@
     <!-- 3. Textbox section -->
     <section class="section">
       <h2>📘 Elasticity: Staircase Demand</h2>
-      <p>
-        explainaions here：
-        <br><br>
-        · 1. …<br>
-        · 2. …<br>
-        · 3. …
-      </p>
+      <div class="textbox" data-explain-id="Elasticity-Staircase-Demand"></div>
     </section>
   </div>
 
@@ -57,5 +51,20 @@
 <script src="../assets/desmos-loader.js"></script>
     <!--Export Desmos-->
 <script src="../assets/export-desmos.js"></script>
+<!-- Automatically fill in texts -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const boxes = document.querySelectorAll("[data-explain-id]");
+
+    boxes.forEach(function (box) {
+      const id = box.dataset.explainId;
+      if (typeof EXPLANATIONS !== "undefined" && EXPLANATIONS[id]) {
+    box.innerHTML = EXPLANATIONS[id];
+  } else {
+    console.warn("Missing explanation for id:", id);
+  }
+    });
+  });
+</script>
 </body>
 </html>
