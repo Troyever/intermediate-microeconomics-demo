@@ -101,7 +101,7 @@ const EXPLANATIONS = {
   //Week1 Maxans
   "Maxans": `
   <p>Differentiate L(I): \\(\\frac{dL}{dI} =\\frac{-32}{(I+1)^2}+ 2\\)</p>
-  <p>Set the derivative equal to zero:\\(\\frac{-32}{(I+1)^2} + 2 = 0\;\Longrightarrow\; (I+1)^2 = 16 \;\Longrightarrow\; I = 3\\)</p>
+  <p>Set the derivative equal to zero:\\(\\frac{-32}{(I+1)^2} + 2 = 0\\;\\Longrightarrow\\; (I+1)^2 = 16 \\;\\Longrightarrow\\; I = 3\\)</p>
   <p>Thus the optimal number of inspections is \\(I^\* = 3\\) per route per day.</p>
   <p>At this point \\(MB(I^\*) = MC(I^\*) = 2\\) </p>
 `,
