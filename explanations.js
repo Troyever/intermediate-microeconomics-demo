@@ -115,8 +115,8 @@ const EXPLANATIONS = {
 
    //Week1 Quizans
   "W1Quizans": `
-   <p>\\(\\frac{df(x,y)}{dx}=4\\), \\(\\frac{df(x,y)}{dy}=8\\) when \\(x=2\\), \\(y=2\\)</p>
-    <p>\\(\\frac{dg(x)}{dx}=0.5\\) when \\(x=10\\)</p>
+   <p>1) \\(\\frac{df(x,y)}{dx}=4\\), \\(\\frac{df(x,y)}{dy}=8\\) when \\(x=2\\), \\(y=2\\)</p>
+    <p>2) \\(\\frac{dg(x)}{dx}=0.5\\) when \\(x=10\\)</p>
   `,
 
   //Week1 Elasticity
