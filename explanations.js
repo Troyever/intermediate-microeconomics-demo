@@ -121,11 +121,18 @@ const EXPLANATIONS = {
 
   //Week1 Elasticity
   "Elasticity": `
+    <h3> definition </h3>
     <h3>Elasticity of two given points(Mid Point Approach)</h3>
-   <p>\\(E_P = \\frac{\Delta Q / Q}{\Delta P / P} = \\frac{\Delta Q_mid}{\Delta P_mid} \times \\frac{P}{Q}\\)</p>
+    <p>\\(E_d = \\frac{\\Delta Q_d}{\\Delta P_d}\\cdot\\frac{P_{d,mid}{Q_{d,mid}}\\)</p>
+    <p>Since Demand curve is downward sloping \\(E_d)\\ is always negative, sometimes, for simplicity purposes, we write absolute value.</p>
+    <p>\\(E_s = \\frac{\\Delta Q_s}{\\Delta P_s}\\cdot\\frac{P_{s,mid}{Q_{s,mid}}\\)</p>
+    <p>Opposite to \\(E_d\\),\\(E_s\\) is always positive.
     <p>2. Exp 1.</p>
     <p>3. AExp 1.</p>
    <h3>Elasticity at one point</h3>
+   <p>    Point elasticity on the Demand/supply curve measures the responsiveness of quantity demanded/supplied to a 1% change in price at a point. </p>
+   <p>\\(E_d=\\frac{dQ_d}{dP}\\cdot\\frac{P}{Q_d}\\)</p>
+   <p>\\(E_s=\\frac{dQ_s}{dP}\\cdot\\frac{P}{Q_s}\\)</p>
   `,
 
   //Week2 Consumers-Problem
