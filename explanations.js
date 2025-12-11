@@ -50,6 +50,14 @@ const EXPLANATIONS = {
 
   //Week1 Max
   "Max": `
+   <p>The financial harm caused by evasion: H(I)=32/I, Cost of Inspections: C(I)=2I</p>
+    <p>I refers to the number of inspections per route per day</p>
+    <p>Define the total loss to PTV from fare evasion as L(I)=H(I)+C(I).</p>
+    <p>Solve for the optimal number of inspections I<sup>*</sup>per route per day. Show MB(I<sup>*</sup>)=MC(I<sup>*</sup>)</p>
+  `,
+
+  //Week1 Maxans
+  "Maxans": `
    <p>1. Exp 1.</p>
     <p>2. Exp 1.</p>
     <p>3. AExp 1.</p>
