@@ -1,3 +1,22 @@
+// Load MathJax
+(function loadMathJax() {
+  // Prevent duplicate loading
+  if (window.mathjaxLoaded) return;
+  window.mathjaxLoaded = true;
+
+  // Load polyfill
+  const poly = document.createElement("script");
+  poly.src = "https://polyfill.io/v3/polyfill.min.js?features=es6";
+  document.head.appendChild(poly);
+
+  // Load MathJax
+  const mj = document.createElement("script");
+  mj.id = "MathJax-script";
+  mj.async = true;
+  mj.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js";
+  document.head.appendChild(mj);
+})();
+
 // all explanaions are recorded under this section
 const EXPLANATIONS = {
   // Week 1, 4 axis cost&benefit
@@ -77,31 +96,31 @@ const EXPLANATIONS = {
 
   //Week1 Max
   "Max": `
-   <p>The financial harm caused by evasion: H(I)=32/(I+1), Cost of Inspections: C(I)=2I</p>
+   <p>The financial harm caused by evasion: $$H(I)=\frac{32}{(I+1)}$$, Cost of Inspections: $$C(I)=2I$$</p>
     <p>I refers to the number of inspections per route per day</p>
-    <p>Define the total loss to PTV from fare evasion as L(I)=H(I)+C(I).</p>
-    <p>Solve for the optimal number of inspections I<sup>*</sup>per route per day. Show MB(I<sup>*</sup>)=MC(I<sup>*</sup>)</p>
+    <p>Define the total loss to PTV from fare evasion as $$L(I)=H(I)+C(I)$$.</p>
+    <p>Solve for the optimal number of inspections $$I^\*$$ per route per day. Show $$MB(I^\*)=MC(I^\*)$$</p>
   `,
 
   //Week1 Maxans
   "Maxans": `
-  <p>Differentiate L(I): dL/dI = -32/(I+1)<sup>2</sup> + 2.</p>
-  <p>Set the derivative equal to zero:-32/(x+1)<sup>2</sup> + 2 = 0 ⇒ (x+1)<sup>2</sup> = 16 ⇒ x = 3.</p>
-  <p>Thus the optimal number of inspections is x* = 3 per route per day.</p>
-  <p>At this point MB(x*) = MC(x*) = 2 </p>
+  <p>Differentiate L(I): $$\frac{dL}{dI} =\frac{-32}{(I+1)^2}+ 2$$</p>
+  <p>Set the derivative equal to zero:$$\frac{-32}{(I+1)^2} + 2 = 0\;\;\Longrightarrow\;\; (I+1)^2 = 16 \;\;\Longrightarrow\;\; I = 3$$</p>
+  <p>Thus the optimal number of inspections is $$I^\* = 3$$ per route per day.</p>
+  <p>At this point $$MB(I^\*) = MC(I^\*) = 2$$ </p>
 `,
 
   //Week1 Quiz
   "W1Quiz": `
-   <p>f(x,y)=x<sup>&alpha;</sup>y<sup>&beta;</sup>,g(x)=5ln(x)</p>
-    <p>1. Calculate: df/dx and df/dy when x=2,y=2</p>
-    <p>2. Calculate: dg(x)/dx when x=10</p>
+   <p>$$f(x,y)=x^\{\alpha}y^\{\beta}$$,$$g(x)=5ln(x)$$</p>
+    <p>1. Calculate: $$\frac{df}{dx}$$ and $$\frac{df}{dy}$$ when $$x=2,y=2$$</p>
+    <p>2. Calculate: $$\frac{dg(x)}{dx}$$ when $$x=10$$</p>
   `,
 
    //Week1 Quizans
   "W1Quizans": `
-   <p>df(x,y)/dx=4, df(x,y)/dy=8 when x=2, y=2</p>
-    <p>dg(x)/dx=0.5 when x=10</p>
+   <p>$$\frac{df(x,y)}{dx}=4$$, $$\frac{df(x,y)}{dy}=8$$ when $$x=2$$, $$y=2$$</p>
+    <p>$$\frac{dg(x)}{dx}=0.5$$ when $$x=10$$</p>
   `,
 
   //Week1 Elasticity
