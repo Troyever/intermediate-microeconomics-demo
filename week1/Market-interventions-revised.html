@@ -41,11 +41,23 @@
     </section>
 
     <!-- 3. Textbox section -->
-    <section class="section">
-      <h2>📘 Market interventions revised</h2>
-      <div class="textbox" data-explain-id="Market-interventions-revised"></div>
-    </section>
+ <!-- 3. Textbox section -->
+<section class="section">
+  <h2>📘 Market interventions revised</h2>
+
+  <!-- Policy-specific explanations with slider -->
+  <h3>Policy-specific explanations</h3>
+  <div class="policy-controls">
+    <label for="policy-slider">Policy type:</label>
+    <input id="policy-slider" type="range" min="1" max="7" step="1" value="1">
+    <div class="policy-label">
+      Current policy: <span id="policy-name"></span>
+    </div>
   </div>
+
+  <div id="policy-exp" class="textbox"></div>
+</section>
+</div>
 
   <!--Desmos-->
 <script src="../assets/desmos-loader.js"></script>
