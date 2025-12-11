@@ -46,7 +46,7 @@ const EXPLANATIONS = {
 
   //Week1 Max
   "Max": `
-   <p>The financial harm caused by evasion: H(I)=32/I, Cost of Inspections: C(I)=2I</p>
+   <p>The financial harm caused by evasion: H(I)=32/(I+1), Cost of Inspections: C(I)=2I</p>
     <p>I refers to the number of inspections per route per day</p>
     <p>Define the total loss to PTV from fare evasion as L(I)=H(I)+C(I).</p>
     <p>Solve for the optimal number of inspections I<sup>*</sup>per route per day. Show MB(I<sup>*</sup>)=MC(I<sup>*</sup>)</p>
@@ -54,10 +54,11 @@ const EXPLANATIONS = {
 
   //Week1 Maxans
   "Maxans": `
-   <p>1. Exp 1.</p>
-    <p>2. Exp 1.</p>
-    <p>3. AExp 1.</p>
-  `,
+  <p>Differentiate L(I): dL/dI = -32/(I+1)<sup>2</sup> + 2.</p>
+  <p>Set the derivative equal to zero:-32/(x+1)<sup>2</sup> + 2 = 0 ⇒ (x+1)<sup>2</sup> = 16 ⇒ x = 3.</p>
+  <p>Thus the optimal number of inspections is x* = 3 per route per day.</p>
+  <p>At this point MB(x*) = MC(x*) = 2 </p>
+`,
 
   //Week1 Quiz
   "Quiz": `
