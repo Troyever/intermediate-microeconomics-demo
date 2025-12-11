@@ -159,7 +159,7 @@ const EXPLANATIONS = {
     <li>No government revenue or expenditure.</li>
     <li><strong>DWL</strong> arises because output is below the efficient competitive level.</li>
   </ul>
-`;
+`,
 
 
   //Week1 Max
