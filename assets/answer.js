@@ -12,6 +12,6 @@ function toggleAll() {
   });
 
   btn.textContent = allVisible
-    ? "Hide all sections"
-    : "Click to show all sections";
+    ? "Hide Answers"
+    : "Show Answers";
 }
