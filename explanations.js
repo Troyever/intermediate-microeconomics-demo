@@ -108,7 +108,7 @@ const EXPLANATIONS = {
 
   //Week1 Quiz
   "W1Quiz": `
-   <p>\\(f(x,y)=x^{\alpha}y^{\beta}\\),\\(g(x)=5\ln(x)\\)</p>
+   <p>\\(f(x,y)=x^{\\alpha}y^{\\beta}\\),\\(g(x)=5\ln(x)\\)</p>
     <p>1. Calculate: \\(\\frac{df}{dx}\\) and \\(\\frac{df}{dy}\\) when \\(x=2,y=2\\)</p>
     <p>2. Calculate: \\(\\frac{dg(x)}{dx}\\) when \\(x=10\\)</p>
   `,
