@@ -43,22 +43,23 @@
     <!-- 3. Textbox section -->
 <section class="section">
   <h2>📘 Market interventions revised</h2>
-
   <h3>Policy explanations</h3>
 
-  <div id="policy-buttons">
-    <button data-policy="1">No intervention</button>
-    <button data-policy="2">Tax on producers</button>
-    <button data-policy="3">Subsidy on producers</button>
-    <button data-policy="4">Price floor</button>
-    <button data-policy="5">Price support</button>
-    <button data-policy="6">Production quota</button>
-    <button data-policy="7">Voluntary reduction</button>
+  <!-- 把说明 + 按钮一起放进同一个 textbox -->
+  <div class="textbox policy-box">
+    <div id="policy-exp" class="policy-exp"></div>
+
+    <div id="policy-buttons" class="policy-buttons">
+      <button data-policy="1">No intervention</button>
+      <button data-policy="2">Tax on producers</button>
+      <button data-policy="3">Subsidy on producers</button>
+      <button data-policy="4">Price floor</button>
+      <button data-policy="5">Price support</button>
+      <button data-policy="6">Production quota</button>
+      <button data-policy="7">Voluntary reduction</button>
+    </div>
   </div>
-
-  <div id="policy-exp" class="textbox"></div>
 </section>
-
 
   <!--Desmos-->
 <script src="../assets/desmos-loader.js"></script>
