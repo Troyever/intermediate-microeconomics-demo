@@ -296,8 +296,7 @@ const POLICY_EXPLANATIONS = {
     name: "No intervention",
    html: `
   <p><b>No intervention:</b> The market clears at the competitive equilibrium.<br>
-  CS is the area under demand and above the equilibrium price;<br>
-  PS is the area above supply and below the equilibrium price.<br>
+  CS is the area under demand and above the equilibrium price;PS is the area above supply and below the equilibrium price.<br>
   There is no deadweight loss.</p>
 `
   },
