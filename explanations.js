@@ -61,10 +61,16 @@ const EXPLANATIONS = {
 `,
 
   //Week1 Quiz
-  "Quiz": `
-   <p>1. Exp 1.</p>
-    <p>2. Exp 1.</p>
-    <p>3. AExp 1.</p>
+  "W1Quiz": `
+   <p>f(x,y)=x<sup>&alpha</sup>y<sup>&beta</sup>,g(x)=5ln(x)</p>
+    <p>1. Calculate: df/dx and df/dy when x=2,y=2</p>
+    <p>2. Calculate: dg(x)/dx when x=10</p>
+  `,
+
+   //Week1 Quizans
+  "W1Quizans": `
+   <p>df(x,y)/dx=4, df(x,y)/dy=8 when x=2, y=2</p>
+    <p>dg(x)/dx=0.5 when x=10</p>
   `,
 
   //Week1 Elasticity
