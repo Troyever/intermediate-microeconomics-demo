@@ -24,31 +24,31 @@ const EXPLANATIONS = {
   <p>
     The first panel compares total benefit <em>B(h)</em> and total cost <em>C(h)</em>. 
     The vertical distance between the two curves is net benefit. 
-    At $h = 3.5$, this gap is largest, so it is our candidate optimal choice.
+    At \\(h = 3.5\\)\\), this gap is largest, so it is our candidate optimal choice.
   </p>
   
   <h3>B. Marginal Benefit / Marginal Cost axis</h3>
   <p>
-    The second panel shows marginal benefit $MB(h) = \frac{dB(h)}{dh}$ and marginal cost $MC(h) = \frac{C(h)}{dh}$. 
+    The second panel shows marginal benefit \\(MB(h) = \\frac{dB(h)}{dh}\\) and marginal cost \\(MC(h) = \\frac{C(h)}{dh}\\). 
     MB(h) and MC(h) are derivatives of B(h) and C(h) (Graph A).
-    The optimal choice occurs where $MB = MC$, the benefit of spending another hour is the same as the cost of it. 
+    The optimal choice occurs where \\(MB = MC\\), the benefit of spending another hour is the same as the cost of it. 
     Which happens at <em>h = 3.5</em>.
   </p>
   
   <h3>C. Net Benefit axis</h3>
   <p>
-    The third panel plots net benefit $NB(h)$ maps out the gap between B(h) and C(h) in graph A. 
+    The third panel plots net benefit \\(NB(h)\\) maps out the gap between B(h) and C(h) in graph A. 
     The best choice is where this curve reaches its maximum. 
     At that point the slope of net benefit is zero, so 
-    $$NB(h) = \frac{dNB(h)}{dh} = 0$ at $h = 3.5$.
+    \\(NB(h) = \\frac{dNB(h)}{dh} = 0\\) at \\(h = 3.5\\).
   </p>
   
   <h3>D. Marginal Net Benefit axis</h3>
   <p>
     The last panel shows marginal net benefit, which is the derivative of NB (Graph C.) 
-    $NB(h) = MB − MC$. 
+    \\(NB(h) = MB − MC\\). 
     The optimum is where this curve crosses zero. 
-    At $h = 3.5$, marginal net benefit equals zero, which is equivalent to 
+    At \\(h = 3.5\\), marginal net benefit equals zero, which is equivalent to 
     choosing the point where marginal benefit equals marginal cost and net benefit is maximized.
   </p>
   `,
@@ -70,16 +70,16 @@ const EXPLANATIONS = {
    //Week1 Lectorial
   "Lectorial": `
    <p>Suppose that you can hire a mechanic to work on your car for up to six hours to locate issues and adress them.</p>
-    <p>The total benefit of repair work is: $B(H)=654H-40H^2$; The total cost is $C(H)=110H+40H^2$</p>
+    <p>The total benefit of repair work is: \\(B(H)=654H-40H^2\\); The total cost is \\(C(H)=110H+40H^2\\)</p>
     <p>H refers to the number of hours. What is your best choice?</sup></p>
   `,
 
   //Week1 Ans
   "Lectorialans": `
-   <p>1. Compute the net benefit function: $NB(H) = B(H) − C(H) = 544H − 80H^2$</p>
+   <p>1. Compute the net benefit function: \\(NB(H) = B(H) − C(H) = 544H − 80H^2\\)</p>
    <p>2. Find the optimal number of hours by maximizing NB(H).This requires setting the derivative of NB(H) equal to zero:</p>
-   <p>&nbsp;&nbsp;&nbsp;$frac{dNB}{dH} = 544 − 160H = 0$</p>
-   <p>3. Solve for H -> $H = 3.4$ hours</p>
+   <p>&nbsp;&nbsp;&nbsp;\\(frac{dNB}{dH} = 544 − 160H = 0\\)</p>
+   <p>3. Solve for H -> \\(H = 3.4\\) hours</p>
    <p>Since 3.4 hours is below the 6-hour limit, the mechanic should be hired for 3.4 hours.</p>
   `,
   
@@ -100,31 +100,29 @@ const EXPLANATIONS = {
 
   //Week1 Maxans
   "Maxans": `
-  <p>Differentiate L(I): $\\frac{dL}{dI} =\\frac{-32}{(I+1)^2}+ 2$</p>
-  <p>Set the derivative equal to zero:$\\frac{-32}{(I+1)^2} + 2 = 0\;\;\Longrightarrow\;\; (I+1)^2 = 16 \;\;\Longrightarrow\;\; I = 3$</p>
-  <p>Thus the optimal number of inspections is $I^\* = 3$ per route per day.</p>
-  <p>At this point $MB(I^\*) = MC(I^\*) = 2$ </p>
+  <p>Differentiate L(I): \\(\\frac{dL}{dI} =\\frac{-32}{(I+1)^2}+ 2\\)</p>
+  <p>Set the derivative equal to zero:\\(\\frac{-32}{(I+1)^2} + 2 = 0\;\;\Longrightarrow\;\; (I+1)^2 = 16 \;\;\Longrightarrow\;\; I = 3\\)</p>
+  <p>Thus the optimal number of inspections is \\(I^\* = 3\\) per route per day.</p>
+  <p>At this point \\(MB(I^\*) = MC(I^\*) = 2\\) </p>
 `,
 
   //Week1 Quiz
   "W1Quiz": `
-   <p>$f(x,y)=x^\{\alpha}y^\{\beta}$,$g(x)=5ln(x)$</p>
-    <p>1. Calculate: $\frac{df}{dx}$ and $\frac{df}{dy}$ when $x=2,y=2$</p>
-    <p>2. Calculate: $\frac{dg(x)}{dx}$ when $x=10$</p>
+   <p>\\(f(x,y)=x^\{\alpha}y^\{\beta}\\),\\(g(x)=5ln(x)\\)</p>
+    <p>1. Calculate: \\(\\frac{df}{dx}\\) and \\(\\frac{df}{dy}\\) when \\(x=2,y=2\\)</p>
+    <p>2. Calculate: \\(\\frac{dg(x)}{dx}\\) when \\(x=10\\)</p>
   `,
 
    //Week1 Quizans
   "W1Quizans": `
-   <p>$\frac{df(x,y)}{dx}=4$, $\frac{df(x,y)}{dy}=8$ when $x=2$, $y=2$</p>
-    <p>$\frac{dg(x)}{dx}=0.5$ when $x=10$</p>
+   <p>\\(\\frac{df(x,y)}{dx}=4\\), \\(\\frac{df(x,y)}{dy}=8\\) when \\(x=2\\), \\(y=2\\)</p>
+    <p>\\(\\frac{dg(x)}{dx}=0.5\\) when \\(x=10\\)</p>
   `,
 
   //Week1 Elasticity
   "Elasticity": `
     <h3>Elasticity of two given points(Mid Point Approach)</h3>
-   <p>$
-   E_P = \frac{\Delta Q / Q}{\Delta P / P} = \frac{\Delta Q_mid}{\Delta P_mid} \times \frac{P}{Q}$
-</p>
+   <p>\\(E_P = \\frac{\Delta Q / Q}{\Delta P / P} = \\frac{\Delta Q_mid}{\Delta P_mid} \times \\frac{P}{Q}\\)</p>
     <p>2. Exp 1.</p>
     <p>3. AExp 1.</p>
    <h3>Elasticity at one point</h3>
