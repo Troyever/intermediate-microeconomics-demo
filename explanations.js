@@ -28,6 +28,13 @@ const EXPLANATIONS = {
     <p>3. AExp 1.</p>
   `,
 
+  //Week1 Ans
+  "LectorialAns": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+  
   //Week1 Market-interventions-revised
   "Market-interventions-revised": `
    <p>1. Exp 1.</p>
