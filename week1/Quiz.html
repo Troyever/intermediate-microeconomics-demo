@@ -21,7 +21,20 @@
     <!-- Page title -->
     <h1>Quiz</h1>
 
-    <!-- 1. Desmos section -->
+     <!-- 1. Textbox section -->
+    <section class="section">
+      <h2>📘 Quiz</h2>
+     <div class="textbox" data-explain-id="Quiz"></div>
+
+        <!--hide all answers-->
+    <button id="toggle-all-btn" class="toggle-section-btn" onclick="toggleAll()">
+    Answers
+  </button>
+    </section>
+  </div>
+
+  <div class="fold-target" id="graph-section">
+    <!-- 2. Desmos section -->
     <section class="section">
       <h2>📈 Interactive Graph</h2>
       <div class="graph-wrapper">
@@ -29,7 +42,16 @@
       </div>
     </section>
 
-    <!-- 2. Video section -->
+    <div class="fold-target" id="answer-section">
+    <!-- 3. Textbox section -->
+   <section class="section">
+  <h2>Suggested Answer</h2>
+    <div class="textbox" data-explain-id="W1Quizans"></div>
+  </div>
+</section>
+
+  <div class="fold-target" id="video-section">
+    <!-- 4. Video section -->
     <section class="section">
       <h2>🎥 Video</h2>
       <div class="video-frame">
@@ -39,13 +61,6 @@
         ></iframe>
       </div>
     </section>
-
-    <!-- 3. Textbox section -->
-    <section class="section">
-      <h2>📘 Quiz</h2>
-       <div class="textbox" data-explain-id="Quiz"></div>
-    </section>
-  </div>
 
 <!--Desmos-->
 <script src="../assets/desmos-loader.js"></script>
@@ -69,6 +84,10 @@
     });
   });
 </script>
+
+      <!--Import Answer btton-->
+      <script src="../assets/answer.js"></script>
+    
 </body>
 </html>
 
