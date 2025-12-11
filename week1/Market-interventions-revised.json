@@ -3,17 +3,17 @@
   "randomSeed": "d035bf8e6361f04170f7dbf3cbb2e990",
   "graph": {
     "viewport": {
-      "xmin": -40.644349476206045,
-      "ymin": -29.35200610425958,
-      "xmax": 68.56008643837883,
-      "ymax": 49.19791358730597
+      "xmin": -30.47504323975626,
+      "ymin": 0.7217235140874045,
+      "xmax": 85.55466991948954,
+      "ymax": 42.12748808906021
     },
     "showGrid": false,
     "__v12ViewportLatexStash": {
-      "xmin": "-40.644349476206045",
-      "xmax": "68.56008643837883",
-      "ymin": "-29.35200610425958",
-      "ymax": "49.19791358730597"
+      "xmin": "-30.47504323975626",
+      "xmax": "85.55466991948954",
+      "ymin": "0.7217235140874045",
+      "ymax": "42.12748808906021"
     }
   },
   "expressions": {
@@ -41,7 +41,7 @@
       {
         "type": "text",
         "id": "857",
-        "text": "Move price slider (and optional tax or subsidy sliders) or adjust desired final price"
+        "text": "Move price slider (and optional tax or subsidy sliders) o adjust desired final price"
       },
       {
         "type": "folder",
@@ -477,7 +477,7 @@
         "id": "456",
         "folderId": "398",
         "color": "#000000",
-        "latex": "P_{1}=27.8",
+        "latex": "P_{1}=30",
         "slider": {
           "hardMin": true,
           "hardMax": true,
@@ -1177,10 +1177,26 @@
         "fillOpacity": "0.4"
       },
       {
+        "type": "expression",
+        "id": "1174",
+        "folderId": "695",
+        "color": "#c74440",
+        "latex": "\\operatorname{polygon}\\left(\\left(Q_{1D},P_{1}\\right),\\left(Q_{1D},0\\right)\\right)\\left\\{T_{ype}=6\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "1175",
+        "folderId": "695",
+        "color": "#c74440",
+        "latex": "\\left(Q_{1D}+10,\\frac{P_{1}}{2}+4\\right)\\left\\{T_{ype}=6\\right\\}",
+        "showLabel": true,
+        "label": "maximum Q traded:`${Q_1D}(Q_{quota} < Q_{eq})`",
+        "hidden": true
+      },
+      {
         "type": "folder",
         "id": "708",
-        "title": "Price support welfare",
-        "collapsed": true
+        "title": "Price support welfare"
       },
       {
         "type": "text",
@@ -1264,21 +1280,90 @@
         "color": "#c74440",
         "latex": "\\left(Q_{1D},0\\right)\\left\\{T_{ype}=5\\right\\}",
         "showLabel": true,
-        "label": " `Q_D=${Q_{1D}}`"
+        "label": " `Q_D(P_1)=${Q_{1D}}`"
       },
       {
         "type": "expression",
         "id": "907",
         "folderId": "708",
-        "color": "#2d70b3",
+        "color": "#c74440",
         "latex": "\\left(Q_{1S},0\\right)\\left\\{T_{ype}=5\\right\\}",
         "showLabel": true,
-        "label": " `Q_S=${Q_{1S}}`"
+        "label": " `Q_S(P_1)=${Q_{1S}}`"
+      },
+      {
+        "type": "expression",
+        "id": "1167",
+        "folderId": "708",
+        "color": "#c74440",
+        "latex": "\\operatorname{polygon}\\left(\\left(Q_{1D},-1\\right),\\left(Q_{1S},-1\\right)\\right)\\left\\{T_{ype}=5\\right\\}",
+        "lines": true,
+        "lineStyle": "DASHED",
+        "lineWidth": "1.5"
+      },
+      {
+        "type": "expression",
+        "id": "1168",
+        "folderId": "708",
+        "color": "#c74440",
+        "latex": "\\operatorname{polygon}\\left(\\left(Q_{1D},0\\right),\\left(Q_{1D},-2\\right)\\right)\\left\\{T_{ype}=5\\right\\}",
+        "lineWidth": "1.5"
+      },
+      {
+        "type": "expression",
+        "id": "1169",
+        "folderId": "708",
+        "color": "#c74440",
+        "latex": "\\operatorname{polygon}\\left(\\left(Q_{1S},0\\right),\\left(Q_{1S},-2\\right)\\right)\\left\\{T_{ype}=5\\right\\}",
+        "lineWidth": "1.5"
+      },
+      {
+        "type": "expression",
+        "id": "1178",
+        "folderId": "708",
+        "color": "#6042a6",
+        "latex": "\\operatorname{polygon}\\left(\\left(Q_{1D},0\\right),\\left(Q_{1D},P_{1}\\right),\\left(Q_{1S},P_{1}\\right),\\left(Q_{1S},0\\right)\\right)\\left\\{T_{ype}=5\\right\\}\\left\\{S_{howG}=1\\right\\}"
+      },
+      {
+        "type": "expression",
+        "id": "1171",
+        "folderId": "708",
+        "color": "#000000",
+        "latex": "Q_{govpurchase}=Q_{1S}-Q_{1D}"
+      },
+      {
+        "type": "expression",
+        "id": "1170",
+        "folderId": "708",
+        "color": "#c74440",
+        "latex": "\\left(\\frac{\\left(Q_{1D}+Q_{1S}\\right)}{2},-2\\right)\\left\\{T_{ype}=5\\right\\}",
+        "showLabel": true,
+        "label": "Quantity Gov purchase: ${Q_govpurchase}",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "1176",
+        "folderId": "708",
+        "color": "#c74440",
+        "latex": "\\operatorname{polygon}\\left(\\left(0,P_{1}\\right),\\left(5000,P_{1}\\right)\\right)\\left\\{T_{ype}=5\\right\\}",
+        "lineWidth": "2"
+      },
+      {
+        "type": "expression",
+        "id": "1177",
+        "folderId": "708",
+        "color": "#c74440",
+        "latex": "\\left(30,P_{1}+2\\right)\\left\\{T_{ype}=5\\right\\}",
+        "showLabel": true,
+        "label": "Gov-set support price:${P_1}",
+        "hidden": true
       },
       {
         "type": "folder",
         "id": "739",
-        "title": "Voluntary reduction welfare"
+        "title": "Voluntary reduction welfare",
+        "collapsed": true
       },
       {
         "type": "text",
@@ -1348,7 +1433,8 @@
       {
         "type": "folder",
         "id": "623",
-        "title": "Labels + misc"
+        "title": "Labels + misc",
+        "collapsed": true
       },
       {
         "type": "text",
@@ -1521,7 +1607,7 @@
         "id": "640",
         "folderId": "623",
         "color": "#c74440",
-        "latex": "x_{legend}=34",
+        "latex": "x_{legend}=57",
         "hidden": true,
         "slider": {
           "min": "-20",
@@ -1534,10 +1620,10 @@
         "id": "641",
         "folderId": "623",
         "color": "#2d70b3",
-        "latex": "y_{legend}=60",
+        "latex": "y_{legend}=54",
         "hidden": true,
         "slider": {
-          "max": "42",
+          "max": "60",
           "step": "1"
         }
       },
@@ -1695,9 +1781,9 @@
         "id": "653",
         "folderId": "623",
         "color": "#6042a6",
-        "latex": "\\left(x_{legend},y_{legend}-3r_{ow}\\right)\\left\\{\\ T_{ype}=2,T_{ype}=5\\right\\}",
+        "latex": "\\left(x_{legend},y_{legend}-3r_{ow}\\right)\\left\\{\\ T_{ype}=3,T_{ype}=5\\right\\}",
         "showLabel": true,
-        "label": "Gov-t loss",
+        "label": "Gov-t Expenditure",
         "hidden": true,
         "labelOrientation": "right",
         "clickableInfo": {
@@ -1710,7 +1796,7 @@
         "id": "737",
         "folderId": "623",
         "color": "#6042a6",
-        "latex": "\\left(x_{legend},y_{legend}-3r_{ow}\\right)\\left\\{T_{ype}=3\\right\\}",
+        "latex": "\\left(x_{legend},y_{legend}-3r_{ow}\\right)\\left\\{T_{ype}=2\\right\\}",
         "showLabel": true,
         "label": "Gov-t revenue",
         "hidden": true,
