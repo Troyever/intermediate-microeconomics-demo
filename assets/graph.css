@@ -213,3 +213,42 @@
   display: block;
 }
 
+/* Textbox */
+.textbox {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background: #fff;
+  position: relative;
+  margin-top: 12px;
+}
+
+.policy-box {
+  padding-bottom: 60px; 
+}
+
+.policy-buttons {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+
+  padding: 6px 10px 10px; 
+  background: #fff;
+
+  border-top: 1px solid #eee; 
+}
+
+.policy-buttons button {
+  flex: 1;
+  font-size: 0.8rem;
+  padding: 4px 6px;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+
