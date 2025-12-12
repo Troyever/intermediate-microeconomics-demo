@@ -4,9 +4,9 @@
   "graph": {
     "viewport": {
       "xmin": -89.29291162815096,
-      "ymin": -61.95951283516064,
+      "ymin": -22.48501057100941,
       "xmax": 71.20915850137035,
-      "ymax": 74.26543204178148
+      "ymax": 34.790929777630254
     },
     "showGrid": false,
     "showXAxis": false,
@@ -19,8 +19,8 @@
     "__v12ViewportLatexStash": {
       "xmin": "-89.29291162815096",
       "xmax": "71.20915850137035",
-      "ymin": "-61.95951283516064",
-      "ymax": "74.26543204178148"
+      "ymin": "-22.48501057100941",
+      "ymax": "34.790929777630254"
     }
   },
   "expressions": {
@@ -1316,9 +1316,15 @@
         "latex": "x-x_{2}<D_{1comp}\\left(y-y_{2}\\right)\\left\\{0\\le x-x_{2}\\le d_{xcomp}\\right\\}\\left\\{p_{1new}\\le y-y_{2}\\le A_{len}\\right\\}"
       },
       {
+        "type": "text",
+        "id": "1396",
+        "text": "B5 for demonstration during lecture"
+      },
+      {
         "type": "folder",
         "id": "1309",
-        "title": "B.5: How Demand curve is generated (Keep B.2, C.2 off)"
+        "title": "B.5: How Demand curve is generated (Keep B.2, C.2 off)",
+        "collapsed": true
       },
       {
         "type": "expression",
