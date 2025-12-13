@@ -3,18 +3,18 @@
   "randomSeed": "18f6a9c9843e5ab87ac8302aa165b450",
   "graph": {
     "viewport": {
-      "xmin": -201.4345088425444,
-      "ymin": -368.6736733940979,
-      "xmax": 201.868382110568,
-      "ymax": 351.51006045069227
+      "xmin": -8.778513001724562,
+      "ymin": -46.725500282693275,
+      "xmax": 104.12920293798315,
+      "ymax": 154.8954210381986
     },
     "showGrid": false,
     "squareAxes": false,
     "__v12ViewportLatexStash": {
-      "xmin": "-201.4345088425444",
-      "xmax": "201.868382110568",
-      "ymin": "-368.6736733940979",
-      "ymax": "351.51006045069227"
+      "xmin": "-8.778513001724562",
+      "xmax": "104.12920293798315",
+      "ymin": "-46.725500282693275",
+      "ymax": "154.8954210381986"
     }
   },
   "expressions": {
@@ -52,7 +52,9 @@
       {
         "type": "folder",
         "id": "1108",
-        "title": "Demand"
+        "title": "Demand",
+        "hidden": true,
+        "collapsed": true
       },
       {
         "type": "expression",
@@ -190,6 +192,7 @@
         "type": "folder",
         "id": "1546",
         "title": "Demand Shift",
+        "hidden": true,
         "collapsed": true
       },
       {
@@ -206,6 +209,7 @@
         "type": "folder",
         "id": "1101",
         "title": "Supply",
+        "hidden": true,
         "collapsed": true
       },
       {
@@ -321,6 +325,7 @@
         "type": "folder",
         "id": "1549",
         "title": "Supply Shift",
+        "hidden": true,
         "collapsed": true
       },
       {
@@ -494,18 +499,31 @@
       {
         "type": "folder",
         "id": "1376",
-        "title": "Bids and ask for variable sample size (with randomizer)",
-        "hidden": true,
-        "collapsed": true
+        "title": "Bids and ask for variable sample size (with randomizer)"
       },
       {
         "type": "expression",
         "id": "1377",
         "folderId": "1376",
         "color": "#6042a6",
-        "latex": "i=81",
+        "latex": "i_{s}=87",
         "slider": {
           "max": "87"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "1519",
+        "folderId": "1376",
+        "color": "#000000",
+        "latex": "k=83",
+        "hidden": true,
+        "slider": {
+          "hardMin": true,
+          "hardMax": true,
+          "min": "0",
+          "max": "83",
+          "step": "1"
         }
       },
       {
@@ -527,7 +545,7 @@
         "id": "1380",
         "folderId": "1376",
         "color": "#2d70b3",
-        "latex": "P_{askR}=P_{askSorted}\\left[1...i\\right]"
+        "latex": "P_{askR}=P_{askSorted}\\left[1...i_{s}\\right]"
       },
       {
         "type": "expression",
@@ -552,19 +570,6 @@
       },
       {
         "type": "expression",
-        "id": "1519",
-        "folderId": "1376",
-        "color": "#000000",
-        "latex": "k=83",
-        "hidden": true,
-        "slider": {
-          "hardMax": true,
-          "max": "83",
-          "step": "1"
-        }
-      },
-      {
-        "type": "expression",
         "id": "1384",
         "folderId": "1376",
         "color": "#c74440",
@@ -572,18 +577,17 @@
       },
       {
         "type": "expression",
-        "id": "1390",
+        "id": "1632",
         "folderId": "1376",
-        "color": "#2d70b3",
-        "latex": "P_{bidR}=P_{bidSortedAcending}\\left[k...1\\right]"
+        "color": "#6042a6",
+        "latex": "n_{bid}=\\operatorname{length}\\left(P_{bidR}\\right)"
       },
       {
         "type": "expression",
-        "id": "1387",
+        "id": "1390",
         "folderId": "1376",
-        "color": "#6042a6",
-        "latex": "r=83",
-        "hidden": true
+        "color": "#2d70b3",
+        "latex": "P_{bidR}=P_{bidSortedAcending}\\left[n...\\left(n-k+1\\right)\\right]"
       },
       {
         "type": "expression",
