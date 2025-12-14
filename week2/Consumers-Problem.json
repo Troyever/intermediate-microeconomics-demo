@@ -3,10 +3,10 @@
   "randomSeed": "0c56e08aaf514bb515c6574e72b0092f",
   "graph": {
     "viewport": {
-      "xmin": -24.304924383098687,
-      "ymin": -13.251731911666035,
-      "xmax": 31.751056185941515,
-      "ymax": 26.433103215233324
+      "xmin": -23.418217772075362,
+      "ymin": 14.730240831347224,
+      "xmax": 26.23690688423677,
+      "ymax": 50.44679411384143
     },
     "showGrid": false,
     "xAxisArrowMode": "BOTH",
@@ -15,10 +15,10 @@
     "yAxisNumbers": false,
     "polarNumbers": false,
     "__v12ViewportLatexStash": {
-      "xmin": "-24.304924383098687",
-      "xmax": "31.751056185941515",
-      "ymin": "-13.251731911666035",
-      "ymax": "26.433103215233324"
+      "xmin": "-23.418217772075362",
+      "xmax": "26.23690688423677",
+      "ymin": "14.730240831347224",
+      "ymax": "50.44679411384143"
     }
   },
   "expressions": {
@@ -68,7 +68,7 @@
         "id": "6",
         "folderId": "372",
         "color": "#c74440",
-        "latex": "p_{1}=4",
+        "latex": "p_{1}=7",
         "hidden": true,
         "slider": {
           "hardMin": true,
@@ -1215,13 +1215,14 @@
       {
         "type": "folder",
         "id": "1081",
-        "title": "Change Utility Types"
+        "title": "Change Utility Types",
+        "collapsed": true
       },
       {
         "type": "expression",
         "id": "1032",
         "folderId": "1081",
-        "color": "#6042a6",
+        "color": "#000000",
         "latex": "\\left(-12,11\\right)",
         "showLabel": true,
         "label": "Cobb Douglas",
@@ -1236,7 +1237,7 @@
         "type": "expression",
         "id": "1033",
         "folderId": "1081",
-        "color": "#6042a6",
+        "color": "#000000",
         "latex": "\\left(-12,9\\right)",
         "showLabel": true,
         "label": "Quasilinear",
@@ -1251,7 +1252,7 @@
         "type": "expression",
         "id": "1034",
         "folderId": "1081",
-        "color": "#6042a6",
+        "color": "#000000",
         "latex": "\\left(-12,7\\right)",
         "showLabel": true,
         "label": "Power",
@@ -1266,7 +1267,7 @@
         "type": "expression",
         "id": "1035",
         "folderId": "1081",
-        "color": "#6042a6",
+        "color": "#000000",
         "latex": "\\left(-12,5\\right)",
         "showLabel": true,
         "label": "CES",
@@ -1281,7 +1282,7 @@
         "type": "expression",
         "id": "1036",
         "folderId": "1081",
-        "color": "#6042a6",
+        "color": "#000000",
         "latex": "\\left(-12,3\\right)",
         "showLabel": true,
         "label": "Perfect Complements",
@@ -1296,7 +1297,7 @@
         "type": "expression",
         "id": "1037",
         "folderId": "1081",
-        "color": "#6042a6",
+        "color": "#000000",
         "latex": "\\left(-12,1\\right)",
         "showLabel": true,
         "label": "Perfect Substitutes",
@@ -1537,7 +1538,7 @@
         "type": "expression",
         "id": "1055",
         "folderId": "382",
-        "color": "#000000",
+        "color": "#2d70b3",
         "latex": "O_{pt2}=\\left(x_{2opt},y_{2opt}\\right)\\left\\{T_{ype}=2\\right\\}",
         "showLabel": true,
         "label": "QuasiLinear Optimal (${x_2round},${y_2round})"
@@ -1546,7 +1547,7 @@
         "type": "expression",
         "id": "1056",
         "folderId": "382",
-        "color": "#c74440",
+        "color": "#2d70b3",
         "latex": "u_{QuasiLinear}\\left(x_{2opt},y_{2opt}\\right)\\le u_{QuasiLinear}\\left(x,y\\right)\\left\\{T_{ype}=2\\right\\}"
       },
       {
@@ -1594,7 +1595,7 @@
         "type": "expression",
         "id": "1064",
         "folderId": "382",
-        "color": "#388c46",
+        "color": "#2d70b3",
         "latex": "O_{pt3}=\\left(x_{3opt},y_{3opt}\\right)\\left\\{T_{ype}=3\\right\\}",
         "showLabel": true,
         "label": "Power Optimal (${x_3round},${y_3round})"
@@ -1603,7 +1604,7 @@
         "type": "expression",
         "id": "1065",
         "folderId": "382",
-        "color": "#6042a6",
+        "color": "#2d70b3",
         "latex": "u_{Power}\\left(x_{3opt},y_{3opt}\\right)\\le u_{Power}\\left(x,y\\right)\\left\\{T_{ype}=3\\right\\}"
       },
       {
@@ -1802,12 +1803,13 @@
         "id": "1096",
         "folderId": "382",
         "color": "#2d70b3",
-        "latex": "u_{PerfectSubstitutes}\\left(x_{5opt},y_{5opt}\\right)\\le u_{PerfectSubstitutes}\\left(x,y\\right)\\left\\{T_{ype}=6\\right\\}"
+        "latex": "u_{PerfectSubstitutes}\\left(x_{6opt},y_{6opt}\\right)\\le u_{PerfectSubstitutes}\\left(x,y\\right)\\left\\{T_{ype}=6\\right\\}"
       },
       {
         "type": "folder",
         "id": "412",
         "title": "Dragable labels",
+        "hidden": true,
         "collapsed": true
       },
       {
