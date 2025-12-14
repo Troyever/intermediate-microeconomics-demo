@@ -445,56 +445,59 @@ document.addEventListener("DOMContentLoaded", () => {
 //slider for Week 2 Consumer's problem
 const Utility_Types = {
   1: {
-    name: "Cobb Douglas",
+    name: "Cobb Douglas Utility",
    html: `
-  <p><b>No intervention:</b> The market clears at the competitive equilibrium.<br>
-  CS is the area under demand and above the equilibrium price;PS is the area above supply and below the equilibrium price.<br>
-  There is no deadweight loss.</p>
+  <p><b>Cob Douglas:</b></p>
+  <p>Cobb Douglas implies strong preference for diversification. Consumers always prefers a mixture of the two goods rather than spend all income on one good.</p>
 `
   },
   2: {
-    name: "Quasi-linear",
+    name: "Quasilinear Utility",
     html: `
-      <p><b>Tax on producers:</b> A per-unit tax raises the price buyers pay and lowers
-      the price sellers receive, so quantity falls. CS and PS both shrink. 
-      Government revenue is the tax per unit times the traded quantity, shown as a rectangle 
-      between buyer and seller prices. DWL is the triangle between the old and new quantities.</p>
+      <p><b>Quasilinear Utility:</b></p>
+      <p>Quasilinear preferences imply that utility is linear in one good and non linear in the other.</p> 
+      <p>the marginal utility for the linear good is constant.</p>
+      <p></p>
+      <p>The optmal choice may be a corner solution, consumer spends all income on one good.</p>
     `
   },
   3: {
-    name: "Power",
+    name: "Power Utility",
     html: `
-      <p><b>Subsidy on producers:</b> A per-unit subsidy lowers the effective cost of supplying.
-      Buyers pay less, sellers receive more, and quantity rises above the competitive level.
-      CS and PS both increase, but the government pays the subsidy rectangle. 
-      DWL comes from overproduction relative to the efficient quantity.</p>
+      <p><b>Power:</b></p>
+      <p>Power utiliyu represents preference with flexible curvature, allowing different degrees of substitutability between goods.</p>
+      <p></p>
+      <p>Consumers still prefer diversification, mixtures of goods.</p>
     `
   },
   4: {
     name: "CES",
     html: `
-      <p><b>Price floor:</b> A binding floor sets a minimum price above equilibrium.
-      Quantity supplied exceeds quantity demanded, so only the smaller quantity is traded.
-      CS falls, PS may rise for inframarginal sellers, and a DWL triangle appears because 
-      output is below the efficient level.</p>
+      <p><b>Constant Elasticity of Subsitution (CES) utility:</b>
+      <p>CES is a more general way of modelling substitutability. By changing \\(r_4\\) on line 83, relationship between two goods changes, approaching to different utility functions.</p>
+      <p>When \\(r_4\\) is a large negative number, the indifference curve approaches <i>Perfect Complements</i>, but it's still an <i> Imperfect Complements</i> indifference curve.</p>
+      <p>When \\(r_4\\) is 0, the indifference curve becomes <i>Cobb Douglas</i>.</p>
+      <p>When \\(r_4\\) is 1, the indifference curves becomes <i>Perfect Substitutes</i>.</p>
+      <p>When \\(r_4\\) is between 0 to 1, the indifference curves illustrates <i>Imperfect Substitutes</i>.</p>
     `
   },
   5: {
     name: "Perfect Complements",
     html: `
-      <p><b>Price support:</b> The government guarantees a high price and buys any excess supply.
-      Consumers pay the support price, producers sell more (to consumers and to the government), 
-      and government expenditure is the support price times the surplus quantity. 
-      DWL arises from overproduction.</p>
+      <p><b>perfect Complement:</b></p>
+      <p>Perfect complements imply that goods must be consumed in a fixed ratio.</p>
+      <p>Gaining additional unit of one good without gaining the other good does not increase utility.</p>
+      <p></p>
+      <p>the optimal bundle exists at the kink point of the indifference curve, where fixed consumption ratio is satisfid.</p>
     `
   },
   6: {
     name: "Perfect Substitutes",
     html: `
-      <p><b>Production quota:</b> A quota caps the maximum quantity that can be sold.
-      When the quota is below the competitive quantity, price rises and traded quantity falls.
-      CS falls, PS is smaller overall, there is no government revenue, and DWL reflects the 
-      lost trades between quota quantity and the competitive quantity.</p>
+      <p><b>Perfect Substitutes:</b></p>
+      <p>Perfect substitutes implies that the consumer is willing to substitute one good for the other at a constant rate.</p>
+      <p></p>
+      <p>The consumer chooses a corner solution, purchasing only the cheaper good based on the relative prices.</p>
     `
   }
 };
