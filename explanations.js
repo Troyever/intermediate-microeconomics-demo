@@ -133,13 +133,6 @@ const EXPLANATIONS = {
   <p>\\(E_s = \\frac{dQ_s}{dP} \\cdot \\frac{P}{Q_s}\\)</p>
 `,
 
-  //Week2 Consumers-Problem
-  "Consumers-Problem": `
-   <p>1. Exp 1.</p>
-    <p>2. Exp 1.</p>
-    <p>3. AExp 1.</p>
-  `,
-
     //Week2 Indifference-curve
   "Indifference-curve": `
  <p><b>Marginal Rate of Substitution</b></p>
