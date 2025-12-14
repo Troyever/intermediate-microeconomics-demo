@@ -142,9 +142,23 @@ const EXPLANATIONS = {
 
     //Week2 Indifference-curve
   "Indifference-curve": `
-   <p>1. Exp 1.</p>
-    <p>2. Exp 1.</p>
-    <p>3. AExp 1.</p>
+ <p><b>Marginal Rate of Substitution</b></p>
+    <p>MRS measures the rate at which the consumer is willing to trade a good (on the x-axis) for another good (on y-axis) while holding utility constant.</p>
+    <p>MRS can be approximated by the slope between any two points on the indifference curve</p>
+    <p>The slope of an indifference at any point is MRS.</p>
+    <p></p>
+ <p><b>Normal Good (Cobb Douglas)</b></p>
+    <p>Each indifference curve represents combinations of pizza and soda that generates same level of utility.</p>
+    <p>The more the better, higher curves represents higher utility</p>
+    <p></p>
+ <p><b>Inferior Good (Soda)</b></p>
+    <p>A good is inferior if its optimal quantity demanded decreases as income increases. The income effect is negative.</p>
+    <p>Inferior good may only become apparent after consuming a sufficient amount of goods (Soda).</p>
+    <p>At low quantities, the good may sill be valued and appear as a normal good, the upper part of the indifference curve convexes, behaves like a normal good. </p>
+    <p>As \\(Q_{Soda}\\)  accumulates, \\(MU_{Soda}\\) approaches to zero, which implies consumer wants to avoid more soda.</p>
+    <p>Different to normal good, \\(MRS\\) grows faster when \\(Q_{Soda}\\) is high. Indicating that indifference curve concaves.</p> 
+    <p>When consumer has 0 unit of pizza, he/she wants to give up infinite amount of Soda for a pizza \\(MRS=\\infinity\\).</p>
+
   `,
 
    //Week2 Utility-Max
