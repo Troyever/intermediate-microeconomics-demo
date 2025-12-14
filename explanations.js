@@ -503,8 +503,8 @@ const Utility_Types = {
 // Button → load explanation
 // -----------------
 document.addEventListener("DOMContentLoaded", () => {
-  const container = document.getElementById("W2-policy-buttons");
-  const expBox = document.getElementById("W2-policy-exp");
+  const container = document.getElementById("policy-buttons");
+  const expBox = document.getElementById("policy-exp");
 
   if (!container || !expBox) return;
 
