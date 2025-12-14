@@ -36,14 +36,6 @@
       box-shadow: 0 3px 10px rgba(0,0,0,0.08);
     }
 
-      .fold-target {
-      background: #fff;
-      padding: 20px 20px 24px;
-      border-radius: 12px;
-      margin-bottom: 28px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-    }
-
     /* Desmos graph：sel adjust width */
     .graph-wrapper {
       position: relative;
