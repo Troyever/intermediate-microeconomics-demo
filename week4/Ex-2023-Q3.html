@@ -9,7 +9,7 @@
    <!-- ================= NAVIGATION BAR ================= -->
   <link rel="stylesheet" href="../assets/site.css">
 <link rel="stylesheet" href="../assets/graph.css?v=1">
-  
+
 </head>
 <body>
   
@@ -19,9 +19,23 @@
 
   <div class="container">
     <!-- Page title -->
-    <h1>Elasticity:Flexible Demand</h1>
+    <h1>Ex 2023:Q3</h1>
 
-    <!-- 1. Desmos section -->
+      <!-- 1. Textbox section -->
+  <div class="container">
+    <section class="section">
+      <h2>📘 Ex 2023:Q3</h2>
+     <div class="textbox" data-explain-id="Ex-2023-Q3"></div>
+
+        <!--hide all answers-->
+    <button id="toggle-all-btn" class="toggle-section-btn" onclick="toggleAll()">
+    Answers
+  </button>
+    </section>
+  </div>
+
+  <div class="fold-target" id="graph-section">
+    <!-- 2. Desmos section -->
     <section class="section">
       <h2>📈 Interactive Graph</h2>
       <div class="graph-wrapper">
@@ -29,7 +43,16 @@
       </div>
     </section>
 
-    <!-- 2. Video section -->
+    <div class="fold-target" id="answer-section">
+    <!-- 3. Textbox section -->
+   <section class="section">
+  <h2>Suggested Answer</h2>
+    <div class="textbox" data-explain-id="Ex-2023-Q3ans"></div>
+  </div>
+</section>
+
+    <div class="fold-target" id="video-section">
+    <!-- 4. Video section -->
     <section class="section">
       <h2>🎥 Video</h2>
       <div class="video-frame">
@@ -40,18 +63,11 @@
       </div>
     </section>
 
-    <!-- 3. Textbox section -->
-    <section class="section">
-      <h2>📘 Elasticity:Flexible Demand</h2>
-    <div class="textbox" data-explain-id="4-axis-Cost-Benefit"></div>
-    </section>
-  </div>
-
 <!--Desmos-->
 <script src="../assets/desmos-loader.js"></script>
     <!--Export Desmos-->
 <script src="../assets/export-desmos.js?v=1"></script>
- <!-- Import text-->
+    <!-- Import text-->
 <script src="/intermediate-microeconomics-project/explanations.js?v=5"></script>
 
 <!-- Automatically fill in texts -->
@@ -61,7 +77,6 @@
 
     boxes.forEach(function (box) {
       const id = box.dataset.explainId;
-
       if (typeof EXPLANATIONS !== "undefined" && EXPLANATIONS[id]) {
     box.innerHTML = EXPLANATIONS[id];
   } else {
@@ -70,6 +85,9 @@
     });
   });
 </script>
-</body>
-</html>
 
+      <!--Import Answer btton-->
+      <script src="../assets/answer.js"></script>
+
+</body>
+    </html>
