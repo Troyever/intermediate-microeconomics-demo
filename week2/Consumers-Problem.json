@@ -3,10 +3,10 @@
   "randomSeed": "0c56e08aaf514bb515c6574e72b0092f",
   "graph": {
     "viewport": {
-      "xmin": -23.418217772075362,
-      "ymin": 14.730240831347224,
-      "xmax": 26.23690688423677,
-      "ymax": 50.44679411384143
+      "xmin": -15.313510959887807,
+      "ymin": -9.799495371580017,
+      "xmax": 26.084288875702576,
+      "ymax": 19.97762700682361
     },
     "showGrid": false,
     "xAxisArrowMode": "BOTH",
@@ -15,10 +15,10 @@
     "yAxisNumbers": false,
     "polarNumbers": false,
     "__v12ViewportLatexStash": {
-      "xmin": "-23.418217772075362",
-      "xmax": "26.23690688423677",
-      "ymin": "14.730240831347224",
-      "ymax": "50.44679411384143"
+      "xmin": "-15.313510959887807",
+      "xmax": "26.084288875702576",
+      "ymin": "-9.799495371580017",
+      "ymax": "19.97762700682361"
     }
   },
   "expressions": {
@@ -203,7 +203,7 @@
         "type": "expression",
         "id": "1026",
         "color": "#2d70b3",
-        "latex": "T_{ype}=1",
+        "latex": "T_{ype}=2",
         "hidden": true,
         "slider": {
           "hardMin": true,
