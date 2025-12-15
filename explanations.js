@@ -276,15 +276,24 @@ const EXPLANATIONS = {
   <p>As <i>r</i> increases, goods become more substitutable, making the optimal bundle more sensitive to relative prices.</p>
 `,
 
-  `,
-
   //Week3 Sales-vs-Income-Tax
-  "Sales-vs-Income-Tax": `
-   <p>1. Exp 1.</p>
-    <p>2. Exp 1.</p>
-    <p>3. AExp 1.</p>
-  `,
-
+ "Sales-vs-Income-Tax": `
+  <p><b>Sales tax (on good x)</b></p>
+  <p>After a sales tax is imposed on good x, the budget line becomes steeper.</p>
+  <p>The tax raises the relative price of x, reducing its price competitiveness compared to good y.</p>
+  <p>Nominal income is unchanged, but real purchasing power is reduced.</p>
+  <p>Consumers face both an <i>income effect</i> and a <i>substitution effect</i>, leading them to substitute away from good x.</p>
+  <p></p>
+  <p><b>Income tax</b></p>
+  <p>An income tax directly reduces consumers’ income, shifting the budget line inward in a parallel way.</p>
+  <p>Relative prices remain unchanged.</p>
+  <p>Consumers face only an <i>income effect</i>.</p>
+  <p></p>
+  <p><b>Comparison</b></p>
+  <p>A sales tax distorts relative prices, while an income tax only reduces purchasing power.</p>
+  <p>Holding tax revenue constant, an income tax is more efficient because it generates a smaller distortion in consumption choices.</p>
+`,
+  
    //Week4 Aggregate-Demand
   "Aggregate-Demand": `
    <p>1. Exp 1.</p>
