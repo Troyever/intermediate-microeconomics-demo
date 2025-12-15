@@ -191,14 +191,14 @@ const EXPLANATIONS = {
    <p><b>Scenario 1: No discount (\\(p_x = p_{1x}\\))</b></p>
    <p>The budget constraint under this scenario is:\\[I = p_{1x} Q_x + p_y Q_y,\\]with the restriction \\(Q_x < C\\).</p>
    <p>With Cobb–Douglas preferences, the consumer spends a constant fraction of income on each good:\\(\\frac{\\gamma}{\\gamma+\\beta}\\) on good x and\\(\\frac{\\beta}{\\gamma+\\beta}\\) on good y.</p>
-   <p>This gives the consumer optimal bundle:\\[Q_x^* = \\frac{\\gamma}{\\gamma+\\beta} \\frac{I}{p_{1x}}, \\quadQ_y^* = \\frac{\\beta}{\\gamma+\\beta} \\frac{I}{p_y}.\\]</p>
+   <p>This gives the consumer optimal bundle:\\[Q_x^* = \\frac{\\gamma}{\\gamma+\\beta} \\frac{I}{p_{1x}}, \\[Q_y^* = \\frac{\\beta}{\\gamma+\\beta} \\frac{I}{p_y}.\\]</p>
    <p>If \\(Q_x^* < C\\), this bundle is feasible and therefore optimal.Otherwise, we must consider the second scenario.</p>
    <p></p
    <p><b>Optimal bundle under scenario 2</b></p>
-   <p>Noticed to get a discount, the consumer must first purchase \\(C\\) units of x at higher price. This means they pay an extra \\(p_{1x}-p_{2x}) more compared to buying everything at the lower price.</p>
+   <p>Noticed to get a discount, the consumer must first purchase \\(C\\) units of x at higher price. This means they pay an extra \\(p_{1x}-p_{2x}\\) more compared to buying everything at the lower price.</p>
    <p>After accounting for the extra cost: The budget left over:\\[I_2=I-(p_{x1}-p_{x2})C\\], a restriction under this scenario: \\(Q_x\\geq C\\)</p>
-   <p>The optimal bundle: \\[Q_{xopt}=\\frac{\\gamma}{\\gamma+\\beta}\\frac{I_2}{p_{2x}}\\],\\[Q_{yopt}=\\frac{\\beta}{\\gamma+\\beta}\\frac{I_2}{p_{y}}\\]
-   <p>Check if \\(Q_{xopt}\\) satisfies the restriction, if yes, this is the answer.</p>
+   <p>The optimal bundle: \\[Q_x^*=\\frac{\\gamma}{\\gamma+\\beta}\\frac{I_2}{p_{2x}}\\],\\[Q_y^*=\\frac{\\beta}{\\gamma+\\beta}\\frac{I_2}{p_{y}}\\]
+   <p>Check if \\(Q_x^*\\) satisfies the restriction, if yes, this is the answer.</p>
   `,
 
   //Week3 Consumers-Problem-Lecture-Example
