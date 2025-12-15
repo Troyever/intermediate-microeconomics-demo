@@ -177,18 +177,28 @@ const EXPLANATIONS = {
   <p>Different from the previous graph, order books are generated randomly. Change \\(r_s\\) and \\(r_d\\), to generate a different list of bids and asks. </p>
   `,
 
-  //Week3 Budget-Line-With-Complex-Pricing
-  "Budget-Line-With-Complex-Pricing": `
-   <p>1. Exp 1.</p>
-    <p>2. Exp 1.</p>
-    <p>3. AExp 1.</p>
-  `,
+ //Week3 Budget-Line-With-Complex-Pricing
+"Budget-Line-With-Complex-Pricing": `
+<p>Good x has <b>piecewise pricing</b> (a quantity discount):the first \\(C\\) units cost \\(p_{1x}\\) each, and any units beyond \\(C\\) cost \\(p_{2x}\\) each, where \\(p_{1x} > p_{2x}\\).</p>
+<p>The price of good y is constant at \\(p_y\\).</p>
+<p>Utility: \\(U(x,y)=x^{\\gamma}y^{\\beta}\\). The consumer has income \\(I\\).Find the optimal bundle \\((x^*,y^*)\\).</p>
+`,
+
 
   //Week3 Budget-Line-With-Complex-Pricingans
   "Budget-Line-With-Complex-Pricingans": `
-   <p>1. Exp 1.</p>
-    <p>2. Exp 1.</p>
-    <p>3. AExp 1.</p>
+   <p>Notice that the budget line has a kink at \\(Q_x = C\\).This creates two possible scenarios depending on which price applies.</p>
+   <p><b>Scenario 1: No discount (\\(p_x = p_{1x}\\))</b></p>
+   <p>The budget constraint under this scenario is:\\[I = p_{1x} Q_x + p_y Q_y,\\]with the restriction \\(Q_x < C\\).</p>
+   <p>With Cobb–Douglas preferences, the consumer spends a constant fraction of income on each good:\\(\\frac{\\gamma}{\\gamma+\\beta}\\) on good x and\\(\\frac{\\beta}{\\gamma+\\beta}\\) on good y.</p>
+   <p>This gives the consumer optimal bundle:\\[Q_x^* = \\frac{\\gamma}{\\gamma+\\beta} \\frac{I}{p_{1x}}, \\quadQ_y^* = \\frac{\\beta}{\\gamma+\\beta} \\frac{I}{p_y}.\\]</p>
+   <p>If \\(Q_x^* < C\\), this bundle is feasible and therefore optimal.Otherwise, we must consider the second scenario.</p>
+   <p></p
+   <p><b>Optimal bundle under scenario 2</b></p>
+   <p>Noticed to get a discount, the consumer must first purchase \\(C\\) units of x at higher price. This means they pay an extra \\(p_{1x}-p_{2x}) more compared to buying everything at the lower price.</p>
+   <p>After accounting for the extra cost: The budget left over:\\[I_2=I-(p_{x1}-p_{x2})C\\], a restriction under this scenario: \\(Q_x\\geq C\\)</p>
+   <p>The optimal bundle: \\[Q_{xopt}=\\frac{\\gamma}{\\gamma+\\beta}\\frac{I_2}{p_{2x}}\\],\\[Q_{yopt}=\\frac{\\beta}{\\gamma+\\beta}\\frac{I_2}{p_{y}}\\]
+   <p>Check if \\(Q_{xopt}\\) satisfies the restriction, if yes, this is the answer.</p>
   `,
 
   //Week3 Consumers-Problem-Lecture-Example
