@@ -232,9 +232,11 @@ const EXPLANATIONS = {
 
    //Week3 Inferior-Good
   "Inferior-Good": `
-   <p>1. Exp 1.</p>
-    <p>2. Exp 1.</p>
-    <p>3. AExp 1.</p>
+  <p>A good is inferior if its optimal quantity demanded decreases as income increases. The income effect is negative.</p>
+   <p>This indifference curve can “bend” because the consumer’s attitude toward good x changes with how much they already have.
+   When x is scarce, x is still treated as a normal “good” (extra x raises utility), so the IC looks standard.</p>
+   <p>But beyond a threshold (satiation), additional x becomes undesirable (x behaves like a “bad”): taking more x lowers utility unless it is compensated by much more y.
+   As a result, the required compensation in y grows faster at high x, which visually creates a curvature change (the IC may look concave in one region and convex in another).</p>
   `,
 
   //Week3 Perfect-Complements
