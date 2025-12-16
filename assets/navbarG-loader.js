@@ -46,11 +46,11 @@ const NAVBAR_HTML=`
     <div class="dropdown">
       <span class="dropdown-btn">Concepts ▾</span>
       <div class="dropdown-content">
-        <a href="/intermediate-microeconomics-project/Instructor-Page/Foundations-of-Consumer_Behavior.html">Market Equilibrium Welfare Supply & Demand</a>
+        <a href="/intermediate-microeconomics-project/Instructor-Page/Foundations-of-Consumer_Behavior.html">Foundations of Consumer Behavior</a>
         <a href="/intermediate-microeconomics-project/Instructor-Page/Market-Equilibrium-Welfare-Supply-Demand.html">Market Equilibrium Welfare Supply & Demand</a>
-        <a href="/intermediate-microeconomics-project/Instructor-Page/Consumer-Choice-Extensions.html">Market Equilibrium Welfare Supply & Demand</a>
-        <a href="/intermediate-microeconomics-project/Instructor-Page/Production-Cost-Decision-Making.html">Market Equilibrium Welfare Supply & Demand</a>
-        <a href="/intermediate-microeconomics-project/Instructor-Page/Monopoly.html">Market Equilibrium Welfare Supply & Demand</a>
+        <a href="/intermediate-microeconomics-project/Instructor-Page/Consumer-Choice-Extensions.html">Consumer Choice Extensions</a>
+        <a href="/intermediate-microeconomics-project/Instructor-Page/Production-Cost-Decision-Making.html">Production, Cost, Decision Making</a>
+        <a href="/intermediate-microeconomics-project/Instructor-Page/Monopoly.html">Monopoly</a>
         <a href="/intermediate-microeconomics-project/Instructor-Page/Oligopoly.html">Oligopoly</a>
       </div>
     </div>
