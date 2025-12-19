@@ -422,8 +422,50 @@ const EXPLANATIONS = {
   `,
 
 
-  //Week5 Edgeworth-Box-3D
-  "Edgeworth-Box-3D": `
+  //Week6 Eckel-Grossman
+  "Eckel-Grossman": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+      //Week6 Risk-Averse-Seeking-Neutral
+  "Risk-Averse-Seeking-Neutral": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+  //Week6 BombRisk
+  "BombRisk": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+    //Week6 BombRiskAns
+  "BombRiskans": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+  //Week6 CRRA-Peter-Wakker
+  "CRRA-Peter-Wakker": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+  //Week6 St-Petersburg-Paradox
+  "St-Petersburg-Paradox": `
+   <p>1. Exp 1.</p>
+    <p>2. Exp 1.</p>
+    <p>3. AExp 1.</p>
+  `,
+
+    //Week7 Production-returns-to-scale
+  "Production-returns-to-scale": `
    <p>1. Exp 1.</p>
     <p>2. Exp 1.</p>
     <p>3. AExp 1.</p>
