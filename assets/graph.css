@@ -289,6 +289,16 @@
   pointer-events: none;
 }
 
+.section::before,
+.section::after {
+  pointer-events: none;
+}
+
+#calculator,
+#calculator * {
+  pointer-events: auto;
+}
+
 
 
 
