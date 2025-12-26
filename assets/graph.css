@@ -284,5 +284,11 @@
   color: #111827;
 }
 
+.graph-wrapper::before,
+.graph-wrapper::after {
+  pointer-events: none;
+}
+
+
 
 
