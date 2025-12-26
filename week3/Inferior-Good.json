@@ -3,16 +3,16 @@
   "randomSeed": "6bf8193d4e612e74d2984101f47d196d",
   "graph": {
     "viewport": {
-      "xmin": -1.220946952639931,
-      "ymin": 0.7316375999337263,
-      "xmax": 7.338089057069681,
-      "ymax": 5.364105543333258
+      "xmin": -1.2888940133346845,
+      "ymin": -0.8715594238725419,
+      "xmax": 7.805081746981778,
+      "ymax": 3.021146040640188
     },
     "__v12ViewportLatexStash": {
-      "xmin": "-1.220946952639931",
-      "xmax": "7.338089057069681",
-      "ymin": "0.7316375999337263",
-      "ymax": "5.364105543333258"
+      "xmin": "-1.2888940133346845",
+      "xmax": "7.805081746981778",
+      "ymin": "-0.8715594238725419",
+      "ymax": "3.021146040640188"
     }
   },
   "expressions": {
@@ -23,9 +23,15 @@
         "text": "Demand with Inferior Goods"
       },
       {
+        "type": "text",
+        "id": "108",
+        "text": "Inspired by \"New Thoughts About Inferior Goods\" H. H. Liebhafsky's paper from The American Economic Review:https://www.jstor.org/stable/1810692"
+      },
+      {
         "type": "folder",
         "id": "77",
         "title": "Credits",
+        "hidden": true,
         "collapsed": true
       },
       {
@@ -74,14 +80,14 @@
         "type": "expression",
         "id": "3",
         "color": "#388c46",
-        "latex": "p_{2}=1",
+        "latex": "p_{2}=0.9",
         "hidden": true
       },
       {
         "type": "expression",
         "id": "4",
         "color": "#6042a6",
-        "latex": "I=4.13",
+        "latex": "I=2.2",
         "hidden": true,
         "slider": {
           "hardMin": true,
@@ -106,148 +112,6 @@
         "color": "#c74440",
         "latex": "a=1.3",
         "hidden": true
-      },
-      {
-        "type": "folder",
-        "id": "97",
-        "title": "Moveable Indifference curve",
-        "collapsed": true
-      },
-      {
-        "type": "text",
-        "id": "95",
-        "folderId": "97",
-        "text": "Moveable Indifference curve"
-      },
-      {
-        "type": "expression",
-        "id": "23",
-        "folderId": "97",
-        "color": "#000000",
-        "latex": "u_{1}\\left\\{x>0\\right\\}\\left\\{y>0\\right\\}=u\\left(x,y\\right)",
-        "lineWidth": "3"
-      },
-      {
-        "type": "expression",
-        "id": "127",
-        "folderId": "97",
-        "color": "#000000",
-        "latex": "P=\\left(\\frac{I}{2},0.9\\right)",
-        "showLabel": true,
-        "label": "Drag",
-        "hidden": true,
-        "dragMode": "Y",
-        "labelSize": "1.5"
-      },
-      {
-        "type": "expression",
-        "id": "128",
-        "folderId": "97",
-        "color": "#388c46",
-        "latex": "u_{1}=u\\left(P.x,P.y\\right)"
-      },
-      {
-        "type": "folder",
-        "id": "27",
-        "title": "Indifference curves",
-        "collapsed": true
-      },
-      {
-        "type": "expression",
-        "id": "31",
-        "folderId": "27",
-        "color": "#6042a6",
-        "latex": "N=4",
-        "hidden": true,
-        "slider": {
-          "hardMin": true,
-          "hardMax": true,
-          "min": "1",
-          "step": "1"
-        }
-      },
-      {
-        "type": "expression",
-        "id": "38",
-        "folderId": "27",
-        "color": "#000000",
-        "latex": "u_{0}=0"
-      },
-      {
-        "type": "expression",
-        "id": "39",
-        "folderId": "27",
-        "color": "#c74440",
-        "latex": "\\Delta_{u}=1",
-        "slider": {
-          "hardMin": true,
-          "hardMax": true,
-          "min": "1",
-          "max": "100",
-          "step": "1"
-        }
-      },
-      {
-        "type": "expression",
-        "id": "40",
-        "folderId": "27",
-        "color": "#2d70b3",
-        "latex": "U=\\left[u_{0}+0\\Delta_{u},u_{0}+1\\Delta_{u}...u_{0}+N\\Delta_{u}\\right]"
-      },
-      {
-        "type": "expression",
-        "id": "41",
-        "folderId": "27",
-        "color": "#388c46",
-        "latex": "U\\left\\{x>0\\right\\}\\left\\{y>0\\right\\}=u(x,y)",
-        "colorLatex": "C_{olorPalette}"
-      },
-      {
-        "type": "text",
-        "id": "29",
-        "folderId": "27",
-        "text": "The number of colors in the palette"
-      },
-      {
-        "type": "expression",
-        "id": "30",
-        "folderId": "27",
-        "color": "#388c46",
-        "latex": "C=\\left[1...N+1\\right]"
-      },
-      {
-        "type": "text",
-        "id": "33",
-        "folderId": "27",
-        "text": "\"The intensity of each RGB value as we move through the palette"
-      },
-      {
-        "type": "expression",
-        "id": "34",
-        "folderId": "27",
-        "color": "#c74440",
-        "latex": "R=255\\frac{\\left(C-1\\right)}{N}"
-      },
-      {
-        "type": "expression",
-        "id": "35",
-        "folderId": "27",
-        "color": "#2d70b3",
-        "latex": "G=0C"
-      },
-      {
-        "type": "expression",
-        "id": "36",
-        "folderId": "27",
-        "color": "#388c46",
-        "latex": "B=255\\left(1-\\frac{\\left(C-1\\right)}{N}\\right)"
-      },
-      {
-        "type": "expression",
-        "id": "37",
-        "folderId": "27",
-        "color": "#6042a6",
-        "latex": "C_{olorPalette}=\\operatorname{rgb}(R,G,B)"
       },
       {
         "type": "folder",
@@ -350,9 +214,36 @@
       },
       {
         "type": "folder",
+        "id": "97",
+        "title": "Moveable Indifference curve",
+        "hidden": true,
+        "collapsed": true
+      },
+      {
+        "type": "text",
+        "id": "95",
+        "folderId": "97",
+        "text": "Moveable Indifference curve"
+      },
+      {
+        "type": "expression",
+        "id": "23",
+        "folderId": "97",
+        "color": "#c74440",
+        "latex": "u_{1}\\left\\{x>0\\right\\}\\left\\{y>0\\right\\}=u\\left(x,y\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "24",
+        "folderId": "97",
+        "color": "#2d70b3",
+        "latex": "u_{1}=2.36",
+        "hidden": true
+      },
+      {
+        "type": "folder",
         "id": "67",
         "title": "Income expansion curve",
-        "hidden": true,
         "collapsed": true
       },
       {
@@ -483,9 +374,153 @@
         "latex": "Y\\left(p_{1},p_{2},I\\right)"
       },
       {
+        "type": "folder",
+        "id": "27",
+        "title": "Indifference curves",
+        "hidden": true,
+        "collapsed": true
+      },
+      {
         "type": "expression",
-        "id": "123",
-        "color": "#c74440"
+        "id": "31",
+        "folderId": "27",
+        "color": "#6042a6",
+        "latex": "N=4",
+        "hidden": true,
+        "slider": {
+          "hardMin": true,
+          "hardMax": true,
+          "min": "1",
+          "step": "1"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "38",
+        "folderId": "27",
+        "color": "#000000",
+        "latex": "u_{0}=0"
+      },
+      {
+        "type": "expression",
+        "id": "39",
+        "folderId": "27",
+        "color": "#c74440",
+        "latex": "\\Delta_{u}=1",
+        "slider": {
+          "hardMin": true,
+          "hardMax": true,
+          "min": "1",
+          "max": "100",
+          "step": "1"
+        }
+      },
+      {
+        "type": "expression",
+        "id": "40",
+        "folderId": "27",
+        "color": "#2d70b3",
+        "latex": "U=\\left[u_{0}+0\\Delta_{u},u_{0}+1\\Delta_{u}...u_{0}+N\\Delta_{u}\\right]"
+      },
+      {
+        "type": "expression",
+        "id": "41",
+        "folderId": "27",
+        "color": "#388c46",
+        "latex": "U\\left\\{x>0\\right\\}\\left\\{y>0\\right\\}=u(x,y)",
+        "colorLatex": "C_{olorPalette}"
+      },
+      {
+        "type": "text",
+        "id": "29",
+        "folderId": "27",
+        "text": "The number of colors in the palette"
+      },
+      {
+        "type": "expression",
+        "id": "30",
+        "folderId": "27",
+        "color": "#388c46",
+        "latex": "C=\\left[1...N+1\\right]"
+      },
+      {
+        "type": "text",
+        "id": "33",
+        "folderId": "27",
+        "text": "\"The intensity of each RGB value as we move through the palette"
+      },
+      {
+        "type": "expression",
+        "id": "34",
+        "folderId": "27",
+        "color": "#c74440",
+        "latex": "R=255\\frac{\\left(C-1\\right)}{N}"
+      },
+      {
+        "type": "expression",
+        "id": "35",
+        "folderId": "27",
+        "color": "#2d70b3",
+        "latex": "G=0C"
+      },
+      {
+        "type": "expression",
+        "id": "36",
+        "folderId": "27",
+        "color": "#388c46",
+        "latex": "B=255\\left(1-\\frac{\\left(C-1\\right)}{N}\\right)"
+      },
+      {
+        "type": "expression",
+        "id": "37",
+        "folderId": "27",
+        "color": "#6042a6",
+        "latex": "C_{olorPalette}=\\operatorname{rgb}(R,G,B)"
+      },
+      {
+        "type": "folder",
+        "id": "140",
+        "title": "button",
+        "collapsed": true
+      },
+      {
+        "type": "expression",
+        "id": "132",
+        "folderId": "140",
+        "color": "#6042a6",
+        "latex": "x_{button}=2.4",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "134",
+        "folderId": "140",
+        "color": "#c74440",
+        "latex": "y_{button}=1.4",
+        "hidden": true
+      },
+      {
+        "type": "expression",
+        "id": "135",
+        "folderId": "140",
+        "color": "#fa7e19",
+        "latex": "\\left(x_{button},y_{button}\\right)\\left\\{U_{C}<U_{I}\\right\\}\\left\\{D>0\\right\\}",
+        "showLabel": true,
+        "label": "Good y is treated as inferior"
+      },
+      {
+        "type": "expression",
+        "id": "136",
+        "folderId": "140",
+        "color": "#2d70b3",
+        "latex": "\\left(x_{button},y_{button}\\right)\\left\\{U_{C}>U_{I},D<0\\right\\}",
+        "showLabel": true,
+        "label": "Good x is treated as normal"
+      },
+      {
+        "type": "expression",
+        "id": "137",
+        "color": "#6042a6"
       }
     ]
   },
