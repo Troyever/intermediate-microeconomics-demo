@@ -281,3 +281,31 @@
   border-color: #d1d5db;
   color: #111827;
 }
+
+/* ===== Navbar content align to 1000px container (CSS-only) ===== */
+.navbar {
+  justify-content: center;
+}
+
+/* Build a 1000px "inner" by making the menu take a fixed max width */
+.nav-menu {
+  width: 100%;
+  max-width: 1000px;   /* match your .container */
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+/* Keep left brand on the left edge of the 1000px block */
+.nav-left {
+  margin-right: auto;
+}
+
+/* Keep right tools on the right edge */
+.nav-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
