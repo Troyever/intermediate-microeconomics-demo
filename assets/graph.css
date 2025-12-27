@@ -11,11 +11,15 @@
       line-height: 1.6;
     }
 
-    .container {
-      max-width: 1000px;          /* Size self adjustments */
-      margin: 0 auto;
-      padding: 24px 16px 40px;
-    }
+   /* make this page match Week pages */
+.container{
+  max-width: 1100px;
+  padding: 32px 40px 60px;
+}
+@media (max-width: 600px){
+  .container{ padding-inline: 14px; }
+}
+
 
     h1 {
       text-align: center;
@@ -280,11 +284,4 @@
   background: #f3f4f6;
   border-color: #d1d5db;
   color: #111827;
-}
-
-/* ===== Navbar match Figure 2 (fixed side padding) ===== */
-.navbar{
-  width: 100%;
-  padding: 0 24px;          /* like figure 2 */
-  justify-content: space-between;
 }
