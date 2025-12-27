@@ -1,95 +1,101 @@
-/* ================== Base Reset ================== */
-* { box-sizing: border-box; }
+ * {
+      box-sizing: border-box;
+    }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "Segoe UI", Roboto, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f8f8f8;
-  color: #333;
-  line-height: 1.6;
-}
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f8f8;
+      color: #333;
+      line-height: 1.6;
+    }
 
-a { color: inherit; text-decoration: none; }
+    .container {
+      max-width: 1000px;          /* Size self adjustments */
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
 
-/* ================== Container ================== */
-/* Graph page content width (intentionally narrower than homepage) */
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 24px 16px 40px;
-}
+    h1 {
+      text-align: center;
+      margin: 0 0 32px;
+      font-size: 1.8rem;
+    }
 
-/* ================== Typography ================== */
-h1 {
-  text-align: center;
-  margin: 0 0 32px;
-  font-size: 1.8rem;
-}
+    h2 {
+      margin: 0 0 16px;
+      font-size: 1.3rem;
+    }
 
-h2 {
-  margin: 0 0 16px;
-  font-size: 1.3rem;
-}
+    .section {
+      background: #fff;
+      padding: 20px 20px 24px;
+      border-radius: 12px;
+      margin-bottom: 28px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
 
-/* ================== Sections ================== */
-.section {
-  background: #fff;
-  padding: 20px 20px 24px;
-  border-radius: 12px;
-  margin-bottom: 28px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-}
+    /* Desmos graph：sel adjust width */
+    .graph-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;       /* ratio can change i.e; 4 / 3 */
+    }
 
-/* ================== Graph Wrapper ================== */
-.graph-wrapper {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-}
+    #calculator {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
 
-#calculator,
 #calculator-3d {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
 
-/* ================== Video ================== */
-.video-frame {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: 10px;
-  overflow: hidden;
-}
+    /* video adapt size automatically */
+    .video-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 10px;
+      overflow: hidden;
+    }
 
-.video-frame iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
+    .video-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
 
-/* ================== Responsive ================== */
-@media (max-width: 600px) {
-  .container { padding: 16px 10px 32px; }
-  h1 { font-size: 1.4rem; }
-  h2 { font-size: 1.1rem; }
-  .section { padding: 16px 14px 20px; border-radius: 10px; }
-}
+    @media (max-width: 600px) {
+      .container {
+        padding: 16px 10px 32px;
+      }
 
-/* ======================================================================
-   Navbar (Full-width, matches Home & Concepts)
-   IMPORTANT: Navbar must NOT be placed inside .container
-   ====================================================================== */
+      h1 {
+        font-size: 1.4rem;
+      }
 
+      h2 {
+        font-size: 1.1rem;
+      }
+
+      .section {
+        padding: 16px 14px 20px;
+        border-radius: 10px;
+      }
+    }
 .navbar {
   width: 100%;
-  background: #111827;
-  color: #fff;
+  background: #111827; 
+  color:#fff;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   padding: 0 24px;
   height: 56px;
@@ -98,6 +104,8 @@ h2 {
   position: sticky;
   top: 0;
   z-index: 1000;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro",
+    "Segoe UI", Roboto, sans-serif;
 }
 
 .nav-left {
@@ -106,17 +114,15 @@ h2 {
   margin-right: 32px;
 }
 
+.nav-left a { color: #fff; }
+.nav-right a { color: #fff; }
+
 .nav-menu {
   display: flex;
   gap: 28px;
 }
 
-.nav-left a,
-.nav-right a {
-  color: #fff;
-}
-
-/* ================== Dropdown ================== */
+/* ================== Dropdown (single clean version) ================== */
 .dropdown {
   position: relative;
   display: inline-block;
@@ -128,7 +134,7 @@ h2 {
   cursor: pointer;
   padding: 12px 4px;
   display: inline-block;
-  color: #fff;
+  color: #ffffff;
 }
 
 .dropdown-content {
@@ -136,14 +142,14 @@ h2 {
   position: absolute;
   top: 100%;
   left: 0;
-  background: #111827;
-  color: #fff;
+  background:#111827;
+  color:#fff;
   padding: 8px 0;
-  border: 1px solid rgba(255,255,255,0.12);
+  border: 1px solid #ccc;
   border-radius: 8px;
   min-width: 160px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-  z-index: 10000;
+  z-index: 1000;
 }
 
 .dropdown:hover .dropdown-content { display: block; }
@@ -151,38 +157,13 @@ h2 {
 .dropdown-content a {
   display: block;
   padding: 8px 16px;
-  color: #fff;
+  color: white;
   font-size: 0.9rem;
 }
 
-.dropdown-content a:hover {
-  background: rgba(255,255,255,0.08);
-}
+.dropdown-content a:hover { background: rgba(255,255,255,0.08);color:#fff }
 
-/* ================== Graph-only Navbar Button ================== */
-/* Use class="nav-export-btn" on Export Graph button */
-
-.nav-export-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px 12px;
-  border-radius: 10px;
-  background: #f9fafb;
-  color: #111827 !important;
-  border: 1px solid #e5e7eb;
-  font-size: 0.9rem;
-  white-space: nowrap;
-}
-
-.nav-export-btn:hover {
-  background: #f3f4f6;
-}
-
-/* ================== Textboxes / Policies ================== */
-.fold-target { display: none; }
-.show { display: block; }
-
+/* Textbox */
 .textbox {
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -192,19 +173,24 @@ h2 {
   margin-top: 12px;
 }
 
-.policy-box { padding-bottom: 60px; }
+.policy-box {
+  padding-bottom: 60px; 
+}
 
 .policy-buttons {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
+
   display: flex;
   justify-content: space-between;
   gap: 4px;
-  padding: 6px 10px 10px;
+
+  padding: 6px 10px 10px; 
   background: #fff;
-  border-top: 1px solid #eee;
+
+  border-top: 1px solid #eee; 
 }
 
 .policy-buttons button {
@@ -213,4 +199,85 @@ h2 {
   padding: 4px 6px;
   border-radius: 9999px;
   white-space: nowrap;
+}
+
+/* === Interactive Graph header === */
+
+.section-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.section-header h2{
+  margin: 0;
+}
+
+/* Desmos redirect button */
+.desmos-btn{
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  color: #374151;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.desmos-btn:hover{
+  background: #f3f4f6;
+  border-color: #d1d5db;
+  color: #111827;
+}
+
+.graph-wrapper::before,
+.graph-wrapper::after {
+  pointer-events: none;
+}
+
+.section::before,
+.section::after {
+  pointer-events: none;
+}
+
+#calculator,
+#calculator * {
+  pointer-events: auto;
+}
+
+/* === Interactive Graph header === */
+
+.section-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.section-header h2{
+  margin: 0;
+}
+
+/* Open in Desmos button */
+.desmos-btn{
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  color: #374151;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.desmos-btn:hover{
+  background: #f3f4f6;
+  border-color: #d1d5db;
+  color: #111827;
 }
