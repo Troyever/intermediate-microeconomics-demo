@@ -282,30 +282,15 @@
   color: #111827;
 }
 
-/* ===== Navbar content align to 1000px container (CSS-only) ===== */
-.navbar {
-  justify-content: center;
-}
-
-/* Build a 1000px "inner" by making the menu take a fixed max width */
-.nav-menu {
+/* ===== Navbar align to 1000px container (CSS-only, correct) ===== */
+.navbar{
+  /* keep the background full-width */
   width: 100%;
-  max-width: 1000px;   /* match your .container */
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
 
-/* Keep left brand on the left edge of the 1000px block */
-.nav-left {
-  margin-right: auto;
-}
+  /* align navbar content with .container (max-width: 1000px) */
+  padding-left: max(24px, calc((100vw - 1000px) / 2));
+  padding-right: max(24px, calc((100vw - 1000px) / 2));
 
-/* Keep right tools on the right edge */
-.nav-right {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  /* ensure left/right stay on edges */
+  justify-content: space-between;
 }
-
