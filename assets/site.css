@@ -40,6 +40,7 @@
 }
 
 .nav-left a { color: #fff; }
+.nav-right a { color: #fff; }
 
 .nav-menu {
   display: flex;
@@ -66,7 +67,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background: #020617;
+  background:#111827;
   color:#fff;
   padding: 8px 0;
   border: 1px solid #ccc;
@@ -81,7 +82,7 @@
 .dropdown-content a {
   display: block;
   padding: 8px 16px;
-  color: #e5e7eb;
+  color: white;
   font-size: 0.9rem;
 }
 
