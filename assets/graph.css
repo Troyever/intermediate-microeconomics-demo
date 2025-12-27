@@ -67,15 +67,21 @@ h2 {
 }
 
 .navbar {
+  /* Match the width and centering of .container */
   max-width: 1100px;
   margin: 0 auto;
-  
   width: 100%;
-  background: #111827; 
+
+  /* Visual styles from your second image */
+  background: #111827;
   color: #fff;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  
+  /* Alignment padding matches container's horizontal padding */
   padding: 0 40px; 
   height: 56px;
+  
+  /* Layout */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -88,7 +94,7 @@ h2 {
 .nav-left {
   font-size: 1.05rem;
   font-weight: 600;
-  margin-right: 0; 
+  margin-right: 0; /* Resetting this ensures alignment to the far left of the 1100px box */
 }
 
 .nav-menu {
@@ -96,16 +102,16 @@ h2 {
   gap: 28px;
 }
 
+/* Matching the container's responsive behavior */
 @media (max-width: 1100px) {
   .navbar {
-    width: 100%;
     max-width: 100%;
   }
 }
 
 @media (max-width: 600px) {
   .navbar {
-    padding: 0 14px; 
+    padding: 0 14px; /* Matches @media (max-width: 600px) { .container { padding-inline: 14px; } } */
   }
 }
 .dropdown {
