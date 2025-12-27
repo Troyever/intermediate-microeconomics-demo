@@ -11,16 +11,6 @@
       line-height: 1.6;
     }
 
-   /* make this page match Week pages */
-.container{
-  max-width: 1100px;
-  padding: 32px 40px 60px;
-}
-@media (max-width: 600px){
-  .container{ padding-inline: 14px; }
-}
-
-
     h1 {
       text-align: center;
       margin: 0 0 32px;
@@ -77,11 +67,6 @@
       height: 100%;
       border: none;
     }
-
-    @media (max-width: 600px) {
-      .container {
-        padding: 16px 10px 32px;
-      }
 
       h1 {
         font-size: 1.4rem;
@@ -286,15 +271,45 @@
   color: #111827;
 }
 
-/* === FORCE 4-axis page to match Week layout === */
+/* ================== MATCH concepts.css (width + spacing) ================== */
+
+/* base */
+* { box-sizing: border-box; }
+
+body{
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Segoe UI", Roboto, sans-serif;
+  background: #f7f7f7;
+  color: #111827;
+  line-height: 1.6;
+}
+
+/* navbar exactly same as concepts.css */
+.navbar{
+  width: 100%;
+  background: #111827;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  padding: 0 24px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* container exactly same as concepts.css */
 .container{
   max-width: 1100px;
+  margin: 0 auto;
   padding: 32px 40px 60px;
 }
 
 @media (max-width: 600px){
-  .container{
-    padding-inline: 14px;
-  }
+  .container{ padding-inline: 14px; }
 }
+
+/* IMPORTANT: remove/avoid ANY other .container rules elsewhere */
 
